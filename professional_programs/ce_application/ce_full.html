@@ -1,0 +1,677 @@
+<!doctype html>
+<html id="htmlTag" class="no-js" lang="en">
+
+<head id="Head1">
+    <title>
+        EE Professional Program Application
+    </title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <!--<link rel="stylesheet" type="text/css" href="/framework/foundation/v6/css/app.css">
+<link rel="stylesheet" type="text/css" href="/ui/foundation-icons/foundation-icons.css" />
+<link rel="stylesheet" type="text/css" href="/framework/styles/css/main/wsu-main.css">
+<link rel="stylesheet" type="text/css" href="/framework/styles/css/main/responsive-tables.css" />
+<link rel="stylesheet" type="text/css" href="/framework/styles/css/main/control-strip.css">
+
+<script src="/framework/foundation/v6/bower_components/modernizr/modernizr.js"></script>
+<script src="/framework/foundation/v6/bower_components/jquery/dist/jquery.min.js"></script>-->
+
+
+
+
+    <link href="https://weber.edu/ui/fa-icons/css/fontawesome.css" rel="stylesheet">
+    <link href="https://weber.edu/ui/fa-icons/css/brands.css" rel="stylesheet">
+    <link href="https://weber.edu/ui/fa-icons/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://weber.edu/framework/foundation/v6.5/css/app.css">
+    <link rel="stylesheet" type="text/css" href="https://weber.edu/ui/foundation-icons/foundation-icons.css" />
+    <link rel="stylesheet" type="text/css" href="https://weber.edu/framework/styles/css/main/wsu-main.css" />
+    <link rel="stylesheet" type="text/css" href="https://weber.edu/framework/styles/css/main/responsive-tables.css" />
+    <link rel="stylesheet" type="text/css" href="https://weber.edu/framework/styles/css/main/control-strip.css">
+    <script src="https://weber.edu/framework/foundation/v6.5/js/modernizr.js"></script>
+    <script src="https://weber.edu/framework/foundation/v6.5/node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="https://weber.edu/framework/scripts/responsive-tables.js"></script>
+
+
+    <!-- Tag Manager -->
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MPNLQ3X');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <link rel="image_src" href="https://weber.edu/ui/images/wsu-card-image-2023.jpg">
+    <link rel="stylesheet" type="text/css"
+        href="https://weber.edu/framework/styles/css/site-manager-templates/dropdown/styles.css" />
+    <script type='text/javascript' src='https://weber.edu/prebuilt/display_template.js'></script>
+    <link rel="canonical" href="https://www.weber.edu/ece/ee_application.html">
+</head>
+
+<body id="Body">
+
+
+
+    <!--Begin Header-->
+
+    <header class="main-header">
+        <div class="skip-to-content"><a href="#skipToContent">skip to content</a></div>
+        <span class="switch show-for-large-down"><button type="button"><img
+                    src="https://weber.edu/ui/images/icons/control-strip/menu.svg"
+                    alt="Navigation Menu"></button></span>
+
+        <div class="row">
+
+            <div class="xlarge-7 columns text-left">
+                <ul class="top-nav show-for-xlarge-up">
+                    <li><a href="http://www.weber.edu">WSU Home</a></li>
+                    <li><a href="https://portalapps.weber.edu/eweber/default.aspx">eWeber</a></li>
+                    <li><a href="https://portalapps.weber.edu/directory/default.aspx">Campus Directory</a></li>
+                    <li><a href="https://weber.instructure.com">Canvas</a></li>
+                    <li><a href="/wsuonline/">WSU Online</a></li>
+                    <li class="com-sub-li"><a role="menuitem" aria-haspopup="true" class="com-link">Info for</a>
+                        <div class="com-sub-container">
+                            <ul class="com-sub">
+                                <li><a href="/currentstudents/">Current&nbsp;Students</a></li>
+                                <li><a href="/facultystaff/">Faculty&nbsp;&amp;&nbsp;Staff</a></li>
+                                <li><a href="http://alumni.weber.edu/">Alumni</a></li>
+                                <li><a href="/visitors/">Visitors</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="xlarge-5 large-12 columns">
+                <ul class="header-icons">
+                    <li style="display:none;" id="liLogin"><a
+                            href="https://portalapps.weber.edu/eweber/default.aspx?usecas=true"><img
+                                src="https://weber.edu/ui/images/icons/control-strip/profile.svg" alt="Log In"></a></li>
+                    <li style="display:none;" id="liProfile"><button type="button" id="btnProfile"><img
+                                src="https://weber.edu/ui/images/icons/control-strip/standard-logged-in.svg"
+                                alt="Profile Menu and Log Out"></button></li>
+                    <li style="display:none;" id="liAlerts"><button type="button" id="alertsButton"><img
+                                src="https://weber.edu/ui/images/icons/control-strip/alerts.svg" alt="Alerts"></button>
+                    </li>
+                    <li><button type="button" id="notificationsButton"><img
+                                src="https://weber.edu/ui/images/icons/control-strip/notifications.svg"
+                                alt="Notifications"></button>
+                    </li>
+                    <li><button type="button" id="searchButton"><img
+                                src="https://weber.edu/ui/images/icons/control-strip/search.svg" alt="Search"></button>
+                    </li>
+                    <li><button type="button" id="azButton"><img
+                                src="https://weber.edu/ui/images/icons/control-strip/a-z.svg"
+                                alt="A to Z Index"></button></li>
+                    <li><a href="http://apps.weber.edu/calendars/" id="calendarLink"><img
+                                src="https://weber.edu/ui/images/icons/control-strip/calendar.svg" alt="Calendar"></a>
+                    </li>
+                    <li><a href="http://www.weber.edu/maps" id="mapsLink"><img
+                                src="https://weber.edu/ui/images/icons/control-strip/maps.svg" alt="Maps"></a></li>
+                </ul>
+                <div class="cover-icons"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-dropdowns">
+        <div id="searchDropdown" class="search-dropdown">
+            <div class="row">
+                <div class="search-bar-desktop">
+                    <gcse:search></gcse:search>
+                </div>
+            </div>
+        </div>
+
+        <div id="profileDropdown" class="row" tabindex="0"></div>
+
+        <div id="notificationsDropdown" tabindex="0"></div>
+
+        <div id="alertsDropdown" class="wsu-alert-dropdown" tabindex="0"></div>
+
+        <div id="azDropdown" class="a-z-dropdown" tabindex="0">
+            <div class="row">
+                <div class="a-z-letters">
+                    <button>A</button><button>B</button><button>C</button><button>D</button><button>E</button><button>F</button><button>G</button><button>H</button><button>I</button><button>J</button><button>K</button><button>L</button><button>M</button>
+                    <button>N</button><button>O</button><button>P</button><button>Q</button><button>R</button><button>S</button><button>T</button><button>U</button><button>V</button><button>W</button><button>X</button><button>Y</button><button>Z</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="header-dropdowns">
+        <div id="searchDropdown" class="search-dropdown">
+        	<div class="row">
+                <div class="search-bar-desktop">
+                    <gcse:search></gcse:search>
+                </div>
+			</div>
+        </div>
+		
+        <div id="profileDropdown" class="row"></div>
+
+        <div id="notificationsDropdown"></div>
+
+        <div id="alertsDropdown" class="wsu-alert-dropdown"></div>
+
+        <div id="azDropdown" class="a-z-dropdown">
+        	<div class="row">
+                <div class="a-z-letters">
+                	<a>A</a><a>B</a><a>C</a><a>D</a><a>E</a><a>F</a><a>G</a><a>H</a><a>I</a><a>J</a><a>K</a><a>L</a><a>M</a>
+                    <a>N</a><a>O</a><a>P</a><a>Q</a><a>R</a><a>S</a><a>T</a><a>U</a><a>V</a><a>W</a><a>X</a><a>Y</a><a>Z</a>
+                </div>
+			</div>
+        </div>
+    </div>-->
+    <!-- End Header -->
+
+
+    <aside id="navAccordian" class="sidebar">
+        <div><a class="home-link" href="https://www.weber.edu">WSU Home</a> <a class="home-link"
+                href="https://portalapps.weber.edu/eweber/">eWeber</a> <a class="home-link"
+                href="https://portalapps.weber.edu/directory/default.aspx">Campus Directory</a> <a class="home-link"
+                href="https://continue.weber.edu/wsuonline/">WSU Online</a></div>
+
+        <ul class="vertical menu" data-accordion-menu="">
+            <li class="accordion-navigation"><a class="nav-title" href="#admissions">Admissions</a>
+
+                <ul class="off-canvas-list vertical menu nested" id="admissions">
+                    <li><a href="https://www.weber.edu/admissions/">Admissions Home</a></li>
+                    <li><a href="https://weber.elluciancrmrecruit.com/Apply/Account/Login">Apply</a></li>
+                    <li><a href="https://www.weber.edu/affordability">Affordability</a></li>
+                    <li><a href="https://www.weber.edu/admissions/shared/costs.html">Tuition &amp; Costs</a></li>
+                    <li><a href="https://www.weber.edu/financialaid">Financial Aid &amp; Scholarships</a></li>
+                    <li><a href="https://portalapps.weber.edu/majors/">Majors, Minors &amp; Programs</a></li>
+                    <li><a href="https://www.weber.edu/getintoweber/visitcampus.html">Visit Campus</a></li>
+                </ul>
+            </li>
+            <li class="accordion-navigation"><a class="nav-title" href="#academics">Academics</a>
+                <ul class="vertical menu nested off-canvas-list" id="academics">
+                    <li><a href="https://www.weber.edu/academics/">Academics Home</a></li>
+                    <li><a href="https://www.weber.edu/majors/">Majors, Minors &amp; Programs</a></li>
+                    <li><a href="https://www.weber.edu/academics/colleges-and-departments.html">Colleges &amp;
+                            Departments</a></li>
+                    <li><a href="https://library.weber.edu/">Stewart Library</a></li>
+                    <li><a href="https://www.weber.edu/OUR">Undergraduate Research</a></li>
+                    <li><a href="https://www.weber.edu/graduate-degrees/">Graduate Programs</a></li>
+                    <li><a href="https://apps.weber.edu/calendars/calendars.aspx?calendar=academic">Academic
+                            Calendar</a></li>
+                    <li><a href="http://catalog.weber.edu/">Catalog</a></li>
+                    <li><a
+                            href="https://bannerprod.weber.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search">Class
+                            Schedule</a></li>
+                </ul>
+            </li>
+            <li class="accordion-navigation"><a class="nav-title" href="#student-life">Student Life &amp; Safety</a>
+                <ul class="vertical menu nested off-canvas-list" id="student-life">
+                    <li><a href="https://www.weber.edu/safeatweber">Safe@Weber</a></li>
+                    <li><a href="https://www.weber.edu/student-access-success">Student Access &amp; Success Home</a>
+                    </li>
+                    <li><a href="https://www.weber.edu/StudentInvolvement">Student Involvement</a></li>
+                    <li><a href="https://www.weber.edu/campusrecreation/">Campus Recreation</a></li>
+                    <li><a href="https://www.weber.edu/union/">Shepherd Union</a></li>
+                    <li><a href="https://apps.weber.edu/calendars/">Events Calendar</a></li>
+                    <li><a href="https://www.weber.edu/housing/">Housing &amp; Residence Life</a></li>
+                    <li><a href="https://www.weber.edu/StudentAffairs/departments.html">Student Services</a></li>
+                </ul>
+            </li>
+            <li class="accordion-navigation"><a class="nav-title" href="#about-wsu">About WSU</a>
+                <ul class="vertical menu nested off-canvas-list" id="about-wsu">
+                    <li><a href="https://www.weber.edu/AboutWSU/">About WSU Home</a></li>
+                    <li><a href="https://www.weber.edu/AboutWSU/history.html">History</a></li>
+                    <li><a href="https://www.weber.edu/AboutWSU/Locations.html">Campuses &amp; Locations</a></li>
+                    <li><a href="https://www.weber.edu/AboutWSU/awards.html">Honors &amp; Awards</a></li>
+                    <li><a href="https://www.weber.edu/wsutoday/">WSU News</a></li>
+                    <li><a href="https://jobs.weber.edu/">Jobs at Weber</a></li>
+                    <li><a href="https://www.weber.edu/financialservices/Disclosures.html">Public Disclosures</a></li>
+                </ul>
+            </li>
+            <li class="accordion-navigation"><a class="nav-title" href="#info-for">Info for</a>
+                <ul class="vertical menu nested off-canvas-list" id="info-for">
+                    <li><a href="https://www.weber.edu/currentstudents/">Current Students</a></li>
+                    <li><a href="https://www.weber.edu/facultystaff/">Faculty and Staff</a></li>
+                    <li><a href="http://www.alumni.weber.edu">Alumni</a></li>
+                    <li><a href="https://www.weber.edu/visitors/">Visitors</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div><a class="nav-title" href="https://apps.weber.edu/calendars/">Calendars</a> <a class="nav-title"
+                href="https://www.weber.edu/maps/">Maps</a> <a class="nav-title"
+                href="https://www.weber.edu/artscalendar">The Arts</a> <a class="nav-title"
+                href="https://www.weberstatesports.com/"><img alt=""
+                    src="https://www.weber.edu/ui/images/athletic-logo.png" /> Athletics</a> <a class="nav-title"
+                href="https://advancement.weber.edu/s/953/dream125/aa17/start.aspx?gid=16&amp;pgid=1801"><img alt=""
+                    src="https://www.weber.edu/ui/images/gift-icon.png" /> Give to WSU</a></div>
+
+    </aside>
+
+    <section class="template-header">
+        <div class="row">
+            <div>
+                <a href='https://www.weber.edu/east'><img src="https://www.weber.edu/wsuimages/ece/east-logo.svg"
+                        border="0" alt="College of Engineering Applied Science  Technology" class="primary-logo" /></a>
+                <div class="secondary-logo-holder"><a href='https://www.weber.edu/ece/default.html'><img
+                            src="https://apps.weber.edu/wsuimages/ece/ece_isolated_white.svg" border="0"
+                            alt="Department of Electrical &amp; Computer Engineering" class="secondary-logo" /></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dropdown-nav">
+        <nav id="navDropdown">
+            <div Class="top-bar-holder">
+                <div Class="row collapse">
+                    <div Class="column">
+                        <div Class="title-bar" data-responsive-toggle="main-menu" data-hide-for="xlarge">
+                            <div Class="right">
+                                <Button type="button" data-toggle><img
+                                        src="https://weber.edu/ui/images/icons/random/drilldown-menu.svg"
+                                        alt="Navigation Menu"></button>
+                            </div>
+                        </div>
+                        <div Class="top-bar" id="main-menu">
+                            <div Class="top-bar-right">
+                                <ul class="menu" id="drilldown-menu" data-auto-height="true"
+                                    data-responsive-menu="drilldown xlarge-dropdown">
+                                    <li>
+                                        <a href="https://www.weber.edu/ece/default.html" target='_self'>Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.weber.edu/ece/degrees.html" target='_self'>Degrees</a>
+                                        <ul class="submenu menu vertical">
+                                            <li class='hide-for-xlarge-up'><a
+                                                    href="https://www.weber.edu/ece/degrees.html">Degrees</a></li>
+                                            <li><a href="https://catalog.weber.edu/preview_program.php?catoid=24&poid=12088&returnto=9149"
+                                                    target='_blank'>BS Electrical Engineering</a></li>
+                                            <li><a href="https://catalog.weber.edu/preview_program.php?catoid=24&poid=12374&returnto=9149"
+                                                    target='_blank'>BS Computer Engineering</a></li>
+                                            <li><a href="https://catalog.weber.edu/preview_program.php?catoid=24&poid=12550&returnto=9149"
+                                                    target='_blank'>BS Biomedical Engineering</a></li>
+                                            <li><a href="https://www.weber.edu/msee" target='_blank'>MS Electrical
+                                                    Engineering</a></li>
+                                            <li><a href="https://www.weber.edu/msce" target='_blank'>MS Computer
+                                                    Engineering</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.weber.edu/ece/about.html" target='_self'>About </a>
+                                        <ul class="submenu menu vertical">
+                                            <li class='hide-for-xlarge-up'><a
+                                                    href="https://www.weber.edu/ece/about.html">About </a></li>
+                                            <li><a href="https://www.weber.edu/ece/ece_at_weber_state.html">Why ECE at
+                                                    Weber State?</a></li>
+                                            <li><a href="https://www.weber.edu/ece/abet.html">ABET Accreditation</a>
+                                            </li>
+                                            <li><a href="https://www.weber.edu/ece/contact.html">Contact Us</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.weber.edu/ece/faculty-staff.html" target='_self'>Faculty
+                                            and Staff</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://wsueast.smugmug.com/Engineering" target='_blank'>Senior
+                                            Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.weber.edu/ece/student-resources.html"
+                                            target='_self'>Student Resources</a>
+                                        <ul class="submenu menu vertical">
+                                            <li class='hide-for-xlarge-up'><a
+                                                    href="https://www.weber.edu/ece/student-resources.html">Student
+                                                    Resources</a></li>
+                                            <li><a href="https://www.weber.edu/ece/advising.html">ECE Advising</a></li>
+                                            <li><a href="https://www.weber.edu/ece/policies.html">ECE Policies</a></li>
+                                            <li><a href="http://weberieee.github.io">IEEE Club</a></li>
+                                            <li><a href="https://www.weber.edu/ece/electives.html">Elective
+                                                    Offerings</a></li>
+                                            <li><a href="https://www.weber.edu/ece/documents.html">Forms and
+                                                    Documents</a></li>
+                                            <li><a href="https://www.weber.edu/ece/ee_application.html">EE Professional
+                                                    Program Application</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+    </section>
+
+    <main class="main-content-holder">
+        <div class="row main-content">
+            <div class="xlarge-12 large-12 columns">
+                <div id="mainContent">
+                    <a id="skipToContent"></a>
+
+
+                    <div class="frameless-image">
+
+                    </div>
+
+                    <div id="contentBody">
+
+
+                        <!-- CUSTOM STARTS HERE -->
+                        <form id="eeForm" autocomplete="off">
+                            <h1>Application to the CE Professional Program</h1>
+                            <p>To be considered for status in the CE Professional Program, you must have a GPA of 2.8
+                                in the following courses. You may apply to the Professional Program without completing
+                                all the courses, but the grades in the incomplete courses will be counted as C's as
+                                placeholder grades. (Please leave those rows blank.) Grades will be verified, and any
+                                inaccuracy may disqualify the application.</p>
+
+                            <p>After you have filled out the form, download the text file and email it to Eric Gibbons
+                                (ericgibbons@weber.edu) <em>and</em> Judy Smith (judithsmith@weber.edu).</p>
+
+                            <label for="firstName">First name: </label><input id="firstName" name="firstName" required
+                                type="text">
+                            <label for="lastName">Last name: </label><input id="lastName" name="lastName" required
+                                type="text">
+                            <label for="email">WSU email: </label><input id="email" name="email" required type="text">
+                            <label for="wnumber">W number: </label><input id="wnumber" name="wnumber" required
+                                type="text">
+
+                            <table>
+                                <tr>
+                                    <th>Course</th>
+                                    <th>Letter Grade</th>
+                                    <th>Grade Value</th>
+                                    <th>Hours</th>
+                                    <th>Points</th>
+                                    <th>Semester/Year</th>
+                                </tr>
+                                <tr>
+                                    <td>CS 1410</td>
+                                    <td><select id="cs1410" name="cs1410" data-grade data-course="cs1410" data-hours="4"
+                                            aria-label="CS 1410 grade"></select></td>
+                                    <td class="num" id="cs1410num"></td>
+                                    <td>4</td>
+                                    <td class="pts" id="cs1410pts"></td>
+                                    <td><input type="text" name="cs1410sem" aria-label="CS 1410 semester/year"></td>
+                                </tr>
+
+                                <tr>
+                                    <td>MATH 1210</td>
+                                    <td><select id="math1210" name="math1210" data-grade data-course="math1210"
+                                            data-hours="4" aria-label="MATH 1210 grade"></select></td>
+                                    <td class="num" id="math1210num"></td>
+                                    <td>4</td>
+                                    <td class="pts" id="math1210pts"></td>
+                                    <td><input type="text" name="math1210sem" aria-label="MATH 1210 semester/year"></td>
+                                </tr>
+                                <tr>
+                                    <td>MATH 1220</td>
+                                    <td><select id="math1220" name="math1220" data-grade data-course="math1220"
+                                            data-hours="4" aria-label="MATH 1220 grade"></select></td>
+                                    <td class="num" id="math1220num"></td>
+                                    <td>4</td>
+                                    <td class="pts" id="math1220pts"></td>
+                                    <td><input type="text" name="math1220sem" aria-label="MATH 1220 semester/year"></td>
+                                </tr>
+                                <tr>
+                                    <td>ENGR 2240</td>
+                                    <td><select id="engr2240" name="engr2240" data-grade data-course="engr2240"
+                                            data-hours="4" aria-label="ENGR 2240 grade"></select></td>
+                                    <td class="num" id="engr2240num"></td>
+                                    <td>4</td>
+                                    <td class="pts" id="engr2240pts"></td>
+                                    <td><input type="text" name="engr2240sem" aria-label="ENGR 2240 semester/year"></td>
+                                </tr>
+                                <tr>
+                                    <td>PHYS 2210</td>
+                                    <td><select id="phys2210" name="phys2210" data-grade data-course="phys2210"
+                                            data-hours="5" aria-label="PHYS 2210 grade"></select></td>
+                                    <td class="num" id="phys2210num"></td>
+                                    <td>5</td>
+                                    <td class="pts" id="phys2210pts"></td>
+                                    <td><input type="text" name="phys2210sem" aria-label="PHYS 2210 semester/year"></td>
+                                </tr>
+                                <tr>
+                                    <td>PHYS 2220</td>
+                                    <td><select id="phys2220" name="phys2220" data-grade data-course="phys2220"
+                                            data-hours="5" aria-label="PHYS 2220 grade"></select></td>
+                                    <td class="num" id="phys2220num"></td>
+                                    <td>5</td>
+                                    <td class="pts" id="phys2220pts"></td>
+                                    <td><input type="text" name="phys2220sem" aria-label="PHYS 2220 semester/year"></td>
+                                </tr>
+                                <tr>
+                                    <td>ECE 1000</td>
+                                    <td><select id="ece1000" name="ece1000" data-grade data-course="ece1000"
+                                            data-hours="2" aria-label="ECE 1000 grade"></select></td>
+                                    <td class="num" id="ece1000num"></td>
+                                    <td>2</td>
+                                    <td class="pts" id="ece1000pts"></td>
+                                    <td><input type="text" name="ece1000sem" aria-label="ECE 1000 semester/year"></td>
+                                </tr>
+                                <tr>
+                                    <td>ECE 1270</td>
+                                    <td><select id="ece1270" name="ece1270" data-grade data-course="ece1270"
+                                            data-hours="4" aria-label="ECE 1270 grade"></select></td>
+                                    <td class="num" id="ece1270num"></td>
+                                    <td>4</td>
+                                    <td class="pts" id="ece1270pts"></td>
+                                    <td><input type="text" name="ece1270sem" aria-label="ECE 1270 semester/year"></td>
+                                </tr>
+                                <tr>
+                                    <td>ECE 1400</td>
+                                    <td><select id="ece1400" name="ece1400" data-grade data-course="ece1400"
+                                            data-hours="4" aria-label="ECE 1400 grade"></select></td>
+                                    <td class="num" id="ece1400num"></td>
+                                    <td>4</td>
+                                    <td class="pts" id="ece1400pts"></td>
+                                    <td><input type="text" name="ece1400sem" aria-label="ECE 1400 semester/year"></td>
+                                </tr>
+                                <tr>
+                                    <td>ECE 2260</td>
+                                    <td><select id="ece2260" name="ece2260" data-grade data-course="ece2260"
+                                            data-hours="4" aria-label="ECE 2260 grade"></select></td>
+                                    <td class="num" id="ece2260num"></td>
+                                    <td>4</td>
+                                    <td class="pts" id="ece2260pts"></td>
+                                    <td><input type="text" name="ece2260sem" aria-label="ECE 2260 semester/year"></td>
+                                </tr>
+                                <tr>
+                                    <td>ECE 2700</td>
+                                    <td><select id="ece2700" name="ece2700" data-grade data-course="ece2700"
+                                            data-hours="4" aria-label="ECE 2700 grade"></select></td>
+                                    <td class="num" id="ece2700num"></td>
+                                    <td>4</td>
+                                    <td class="pts" id="ece2700pts"></td>
+                                    <td><input type="text" name="ece2700sem" aria-label="ECE 2700 semester/year"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" style="text-align:right;">Pre-Professional GPA:</td>
+                                    <td colspan="2"><input id="gpa" name="gpa" type="text" readonly
+                                            aria-label="Pre-Professional GPA"></td>
+                                </tr>
+                            </table>
+                            <br>
+                            <p>By submitting this form, you attest that the information is accurate. If it is found that
+                                you fabricated data on this form, you will be removed from the program immediately.
+                            </p>
+                            <button id="downloadReport" type="button">Download Report</button>
+                        </form>
+                        <div class="note">
+                            <ul>
+                                <li><b>Grade Values:</b> A=4.00, A-=3.67, B+=3.33, B=3.00, B-=2.67, C+=2.33, C=2.00</li>
+                                <li>If you have taken MATH 2250 instead of ENGR 2240, please enter the letter grade of
+                                    that course.</li>
+                                <li>If you have taken MATH 2270 and MATH 2280 instead of ENGR 2240, enter the average
+                                    letter grade of the two courses. If the average is between grades, round up. E.g.,
+                                    if you get an A in MATH 2270 and an A- in MATH 2280, enter an A for MATH 2250.</li>
+                                <li>You may substitute ENGR 1000 in lieu of ECE 1000.</li>
+                            </ul>
+                        </div>
+                        <script src="https://www.weber.edu/wsuimages/ece/site/ee_application.js"></script>
+
+                        <!-- CUSTOM ENDS HERE -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="row">
+            <aside class="large-12 medium-12 xlarge-4 columns footer-left">
+                <div class="text-center contact-info"><a href="https://www.weber.edu"><img alt="WSU Home Page"
+                            src="https://www.weber.edu/ui/images/footer-logo.svg" /> </a>
+                    <address>Ogden, Utah 84408</address>
+                    <a href="tel:18016266000">1-801-626-6000</a><br />
+                    <a class="button font-2-7 small contact-us" href="https://www.weber.edu/contactus/">Contact Us</a>
+                    <a class="button font-2-7 small translate" onclick="translateURL()"
+                        onkeydown="handleKeyPress(event)" tabindex="0">En espa&ntilde;ol</a>
+                </div>
+
+                <div class="text-center footer-icons"><a href="https://www.facebook.com/WeberState" target="_blank"
+                        title="Like us on Facebook"><img alt="Like us on Facebook"
+                            src="https://www.weber.edu/ui/images/icons/footer/facebook-square.svg" /> </a> <a
+                        href="https://www.youtube.com/WeberStateU" target="_blank"
+                        title="Subscribe to our YouTube Channel"> <img alt="Subscribe to our YouTube Channel"
+                            src="https://www.weber.edu/ui/images/icons/footer/youtube.svg" /> </a> <a
+                        href="https://twitter.com/WeberStateU" target="_blank" title="Follow us on X"> <img
+                            alt="Follow us on Twitter"
+                            src="https://www.weber.edu/ui/images/icons/footer/twitter-x.svg" /> </a> <a
+                        href="https://instagram.com/weberstate" target="_blank" title="Follow us on Instagram"> <img
+                            alt="Follow us on Instagram"
+                            src="https://www.weber.edu/ui/images/icons/footer/instagram.svg" /> </a><a
+                        href="https://www.tiktok.com/@weberstateu" target="_blank" title="Follow us on TikTok"> <img
+                            alt="Follow us on TikTok" src="https://www.weber.edu/ui/images/icons/footer/tiktok.svg" />
+                    </a></div>
+            </aside>
+
+            <nav class="xlarge-8 columns footer-right">
+                <div class="row">
+                    <div class="large-4 medium-12 columns center-for-mobile">
+                        <div class="nav-header">Popular</div>
+
+                        <ul>
+                            <li><a href="https://portalapps.weber.edu/majors/">Majors, Minors &amp; Programs</a></li>
+                            <li><a href="https://www.weber.edu/admissions">Admissions</a></li>
+                            <li><a href="https://www.wildcatstores.com/">Bookstore</a></li>
+                            <li><a href="https://library.weber.edu/">Stewart Library</a></li>
+                            <li><a href="https://jobs.weber.edu/">Jobs at Weber</a></li>
+                            <li><a href="http://weberstatetickets.com">Weber State Tickets</a></li>
+                            <li><a href="https://portalapps.weber.edu/eweber/">eWeber</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="large-4 medium-12 columns center-for-mobile">
+                        <div class="nav-header">Directories</div>
+
+                        <ul>
+                            <li><a
+                                    href="https://bannerprod.weber.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search">Class
+                                    Schedule</a></li>
+                            <li><a href="https://apps.weber.edu/calendars/">Calendars</a></li>
+                            <li><a href="http://catalog.weber.edu/">Catalog</a></li>
+                            <li><a href="https://portalapps.weber.edu/directory/">Campus Directory</a></li>
+                            <li><a href="https://www.weber.edu/maps">Maps &amp; Locations</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="large-4 medium-12 columns center-for-mobile">
+                        <div class="nav-header">Resources</div>
+
+                        <ul>
+                            <li><a href="https://www.weber.edu/safeatweber">Safe@Weber</a></li>
+                            <li><a href="https://www.weber.edu/nondiscriminationandaccessibility">Nondiscrimination
+                                    &amp; Accessibility</a></li>
+                            <li><a href="https://www.weber.edu/financialservices/Disclosures.html">Public
+                                    Disclosures</a></li>
+                            <li><a href="https://www.weber.edu/WSUHomePage/WSU-Terms-of-Use.html">WSU Terms of Use and
+                                    Privacy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="row legal-footer"><small>&copy;&nbsp;Copyright&nbsp;<span
+                    id="year">2025</span>&nbsp;All&nbsp;Rights&nbsp;Reserved</small> <small> <span
+                    class="hide-for-medium-down">&nbsp;&nbsp;|&nbsp;&nbsp;</span><a onclick="translateURL()"
+                    onkeydown="handleKeyPress(event)" tabindex="0">&nbsp;Google&nbsp;Translate</a></small></div>
+    </footer>
+
+    <div class="overlay">&nbsp;</div>
+
+    <div class="overlay-locked">&nbsp;</div>
+    <script>
+        function currentYear() {
+            var d = new Date();
+            var n = d.getFullYear();
+            document.getElementById("year").innerHTML = n;
+        }
+        currentYear();
+
+        function handleKeyPress(event) {
+            if (event.key === "Enter") {
+                translateURL();
+            }
+        }
+    </script>
+
+
+
+    <script>
+        $("#navDesktop a").each(function () {
+            $("#drilldown-menu").append("<li class='hide-for-xlarge-up'>" + this.outerHTML + "</li>");
+        });
+    </script>
+
+
+    <script src="https://weber.edu/framework/foundation/v6.5/node_modules/what-input/dist/what-input.js"></script>
+    <script
+        src="https://weber.edu/framework/foundation/v6.5/node_modules/foundation-sites/dist/js/foundation.js"></script>
+    <script src="https://weber.edu/framework/foundation/v6.5/js/app.js"></script>
+
+    <script src="https://weber.edu/framework/scripts/wsu-public.js"></script>
+    <script src="https://weber.edu/framework/scripts/global.js"></script>
+    <script src="https://weber.edu/framework/scripts/mobile.js"></script>
+    <script src="https://weber.edu/framework/scripts/control-strip.js"></script>
+    <script src="https://weber.edu/framework/scripts/flying-focus.js"></script>
+
+
+    <script src="https://portalapps.weber.edu/SmartLogin/Scripts/2.0/TravelinLogin.js"></script>
+    <script src="https://portalapps.weber.edu/lazindex/Scripts/2.1/TravelinAZ.js"></script>
+    <script src="https://portalapps.weber.edu/lhomepagealerts/Scripts/2.0/travelinalerts.js"></script>
+    <script src="https://portalapps.weber.edu/ewebersystemmessages/Scripts/2.0/notifications.js"></script>
+    <script src="https://weber.edu/framework/scripts/AskWaldo.js"></script>
+    <!-- Tag Manager -->
+
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src='https://www.googletagmanager.com/ns.html?id=GTM-MPNLQ3X' height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (typeof updateGPA === 'function') {
+                updateGPA();
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application to the EE Professional Program</title>
+    <link rel="stylesheet" href="ee_applicaton.css">
+</head>
+
+<body>
+    <h1>Application to the EE Professional Program</h1>
+    <p>To be considered for status in the EE Professional Program, you must have a GPA of 2.8 in the following courses.
+        You may apply to the Professional Program without completing all of the courses, but the grades in the
+        incomplete courses will be counted as C's as placeholder grades. (Please leave those rows blank.) Grades will
+        be verified, and any inaccuracy may disqualify the application.</p>
+
+    <p> After you have filled out the form, download the text file and email it to Eric Gibbons (ericgibbons@weber.edu)
+        and Judy Smith (judithsmith@weber.edu).</p>
+    <form id="eeForm" autocomplete="off">
+        <label>First name: <input type="text" name="firstName" required></label><br><br>
+        <label>Last name: <input type="text" name="lastName" required></label><br><br>
+        <label>WSU email: <input type="text" name="email" required></label><br><br>
+        <label>W number: <input type="text" name="wnumber" required></label><br><br>
+        <table>
+            <tr>
+                <th>Course</th>
+                <th>Letter Grade</th>
+                <th>Grade Value</th>
+                <th>Hours</th>
+                <th>Points</th>
+                <th>Semester/Year</th>
+            </tr>
+            <!-- Course rows -->
+            <tr>
+                <td><label for="chem1230">CHEM 1230</label></td>
+                <td>
+                    <select id="chem1230" name="chem1230" data-grade data-course="chem1230" data-hours="4"
+                        aria-label="Grade for CHEM 1230"></select>
+                </td>
+                <td id="chem1230num"></td>
+                <td>4</td>
+                <td id="chem1230pts"></td>
+                <td><input type="text" name="chem1230sem" aria-label="Semester/Year for CHEM 1230"></td>
+            </tr>
+            <tr>
+                <td><label for="chem1235">CHEM 1235</label></td>
+                <td>
+                    <select id="chem1235" name="chem1235" data-grade data-course="chem1235" data-hours="1"
+                        aria-label="Grade for CHEM 1235"></select>
+                </td>
+                <td id="chem1235num"></td>
+                <td>1</td>
+                <td id="chem1235pts"></td>
+                <td><input type="text" name="chem1235sem" aria-label="Semester/Year for CHEM 1235"></td>
+            </tr>
+            <tr>
+                <td><label for="math1210">MATH 1210</label></td>
+                <td>
+                    <select id="math1210" name="math1210" data-grade data-course="math1210" data-hours="4"
+                        aria-label="Grade for MATH 1210"></select>
+                </td>
+                <td id="math1210num"></td>
+                <td>4</td>
+                <td id="math1210pts"></td>
+                <td><input type="text" name="math1210sem" aria-label="Semester/Year for MATH 1210"></td>
+            </tr>
+            <tr>
+                <td><label for="math1220">MATH 1220</label></td>
+                <td>
+                    <select id="math1220" name="math1220" data-grade data-course="math1220" data-hours="4"
+                        aria-label="Grade for MATH 1220"></select>
+                </td>
+                <td id="math1220num"></td>
+                <td>4</td>
+                <td id="math1220pts"></td>
+                <td><input type="text" name="math1220sem" aria-label="Semester/Year for MATH 1220"></td>
+            </tr>
+            <tr>
+                <td><label for="math2210">MATH 2210</label></td>
+                <td>
+                    <select id="math2210" name="math2210" data-grade data-course="math2210" data-hours="4"
+                        aria-label="Grade for MATH 2210"></select>
+                </td>
+                <td id="math2210num"></td>
+                <td>4</td>
+                <td id="math2210pts"></td>
+                <td><input type="text" name="math2210sem" aria-label="Semester/Year for MATH 2210"></td>
+            </tr>
+            <tr>
+                <td><label for="engr2240">ENGR 2240</label></td>
+                <td>
+                    <select id="engr2240" name="engr2240" data-grade data-course="engr2240" data-hours="4"
+                        aria-label="Grade for ENGR 2240"></select>
+                </td>
+                <td id="engr2240num"></td>
+                <td>4</td>
+                <td id="engr2240pts"></td>
+                <td><input type="text" name="engr2240sem" aria-label="Semester/Year for ENGR 2240"></td>
+            </tr>
+            <tr>
+                <td><label for="phys2210">PHYS 2210</label></td>
+                <td>
+                    <select id="phys2210" name="phys2210" data-grade data-course="phys2210" data-hours="5"
+                        aria-label="Grade for PHYS 2210"></select>
+                </td>
+                <td id="phys2210num"></td>
+                <td>5</td>
+                <td id="phys2210pts"></td>
+                <td><input type="text" name="phys2210sem" aria-label="Semester/Year for PHYS 2210"></td>
+            </tr>
+            <tr>
+                <td><label for="phys2220">PHYS 2220</label></td>
+                <td>
+                    <select id="phys2220" name="phys2220" data-grade data-course="phys2220" data-hours="5"
+                        aria-label="Grade for PHYS 2220"></select>
+                </td>
+                <td id="phys2220num"></td>
+                <td>5</td>
+                <td id="phys2220pts"></td>
+                <td><input type="text" name="phys2220sem" aria-label="Semester/Year for PHYS 2220"></td>
+            </tr>
+            <tr>
+                <td><label for="ece1000">ECE 1000</label></td>
+                <td>
+                    <select id="ece1000" name="ece1000" data-grade data-course="ece1000" data-hours="2"
+                        aria-label="Grade for ECE 1000"></select>
+                </td>
+                <td id="ece1000num"></td>
+                <td>2</td>
+                <td id="ece1000pts"></td>
+                <td><input type="text" name="ece1000sem" aria-label="Semester/Year for ECE 1000"></td>
+            </tr>
+            <tr>
+                <td><label for="ece1270">ECE 1270</label></td>
+                <td>
+                    <select id="ece1270" name="ece1270" data-grade data-course="ece1270" data-hours="4"
+                        aria-label="Grade for ECE 1270"></select>
+                </td>
+                <td id="ece1270num"></td>
+                <td>4</td>
+                <td id="ece1270pts"></td>
+                <td><input type="text" name="ece1270sem" aria-label="Semester/Year for ECE 1270"></td>
+            </tr>
+            <tr>
+                <td><label for="ece1400">ECE 1400</label></td>
+                <td>
+                    <select id="ece1400" name="ece1400" data-grade data-course="ece1400" data-hours="4"
+                        aria-label="Grade for ECE 1400"></select>
+                </td>
+                <td id="ece1400num"></td>
+                <td>4</td>
+                <td id="ece1400pts"></td>
+                <td><input type="text" name="ece1400sem" aria-label="Semester/Year for ECE 1400"></td>
+            </tr>
+            <tr>
+                <td><label for="ece2260">ECE 2260</label></td>
+                <td>
+                    <select id="ece2260" name="ece2260" data-grade data-course="ece2260" data-hours="4"
+                        aria-label="Grade for ECE 2260"></select>
+                </td>
+                <td id="ece2260num"></td>
+                <td>4</td>
+                <td id="ece2260pts"></td>
+                <td><input type="text" name="ece2260sem" aria-label="Semester/Year for ECE 2260"></td>
+            </tr>
+            <tr>
+                <td><label for="ece2700">ECE 2700</label></td>
+                <td>
+                    <select id="ece2700" name="ece2700" data-grade data-course="ece2700" data-hours="4"
+                        aria-label="Grade for ECE 2700"></select>
+                </td>
+                <td id="ece2700num"></td>
+                <td>4</td>
+                <td id="ece2700pts"></td>
+                <td><input type="text" name="ece2700sem" aria-label="Semester/Year for ECE 2700"></td>
+            </tr>
+            <tr>
+                <td colspan="4" style="text-align:right;">Pre-Professional GPA:</td>
+                <td colspan="2"><input id="gpa" name="gpa" type="text" readonly aria-label="Pre-Professional GPA">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <p> By submitting this form you are attesting that the information is accurate. If it is found that you
+            fabricated data on this form you will be removed from the program immediately.</p>
+        <br>
+        <!-- <button type="submit">Submit</button> -->
+        <button id="downloadReport" type="button">Download Report</button>
+    </form>
+    <div class="note">
+        <p><b>Grade Values:</b> A=4.00, A-=3.67, B+=3.33, B=3.00, B-=2.67, C+=2.33, C=2.00<br>
+            If you have taken CHEM 1230 instead of CHEM 1210, please enter the letter grade of that course.<br>
+            If you have taken MATH 2250 instead of ENGR 2240, please enter the letter grade of that course.<br>
+            If you have taken MATH 2270 and MATH 2280 instead of ENGR 2240, enter the average letter grade of the two
+            courses. If the average is between grades, round up. E.g., if you get an A in MATH 2270 and a A- in MATH
+            2280, enter an A for MATH 2250.<br>
+            You may substitute ENGR 1000 in lieu for ECE 1000.</p>
+    </div>
+    <script src="ee_application.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+\documentclass[11pt]{article}
+\usepackage[pdftitle={Professional Program Application},pdflang=en-US]{hyperref}
+
+\usepackage[parfill]{parskip} % no indent on paragraphs
+\usepackage[top=1.5cm, bottom=1.5cm, right=2cm, left=2cm]{geometry} \usepackage[compact]{titlesec} % save room between sections
+\usepackage{tabto}
+\usepackage{tikz}
+\usepackage{hyperref}
+\renewcommand*\arraystretch{1.4}
+\usepackage{graphicx}
+
+
+\def\textfieldwidth{3.5in}%
+
+\newlength{\LabelWidth}%
+\setlength{\LabelWidth}{1in}%
+%\settowidth{\LabelWidth}{Employee E-mail:}%  Specify the widest text here.
+
+% Optional first parameter here specifies the alignment of
+% the text within the \makebox.  Default is [l] for left 
+% alignment. Other options are [r] and [c] for right and center
+\newcommand*{\AdjustSize}[2][l]{\makebox[\LabelWidth][#1]{#2}}%
+
+\newcounter{textfield}
+\newcommand\AutoTextField{\stepcounter{textfield}
+  \TextField[width=3cm,align=1,name=autotextfield\thetextfield,altname={autoTextField}]{}}
+
+\newcommand*{\LetterField}[1]{\TextField[width=2cm,align=1,name=#1grade,altname={Letter Grade}]{}}
+
+\newcommand*{\NumField}[2][]{\TextField[
+  width=2cm,
+  name=#2num,
+  readonly=true,
+  align=1,
+  calculate={%
+    var grade = this.getField("#2grade").value;
+    switch (grade) {
+      case "A":  event.value = 4;
+      break;
+      case "A-":  event.value = 3.67;
+      break;
+      case "B+":  event.value = 3.33;
+      break;
+      case "B":  event.value = 3;
+      break;
+      case "B-":  event.value = 2.67;
+      break;
+      case "C+":  event.value = 2.33;
+      break;
+      case "C":  event.value = 2;
+      break;
+      default:  event.value = 2;
+      break;
+    }
+  },
+  altname={#1}
+  ]
+  }
+
+
+\newcommand*{\PtsField}[2]{%
+  \TextField[name=#1pts,
+  readonly=true,
+  width=2cm,
+  align=1,
+  calculate={%
+    var pts = this.getField("#1num");
+    event.value= pts.value*#2;
+  },
+  altname={Points}
+  ]
+}
+
+\title{Application to the BME Professional Program}
+
+\renewcommand{\maketitle}{
+  \noindent
+  {\LARGE\textbf{Application to the BME Professional Program}}
+  \par\vspace{1em}
+}
+
+\begin{document}
+\begin{Form}
+
+  \tikz[remember picture,overlay]
+  \path (current page.north east) ++ (-7cm,-2cm) node {\includegraphics[width=10cm,alt={Weber State University Electrical and Computer Engineering horizontal logo}]{ece_horiz.pdf}};
+
+  \vspace{1.25cm}
+  \maketitle
+
+  To be considered for status in the BME Professional Program, you must have a GPA of 2.8 in the following courses.  You may apply to the Professional Program without completing all of the courses, but the grades in the incomplete courses will be counted as C's as placeholder grades.  (Please leave those boxes blank.)  Grades will be verified, and any inaccuracy may disqualify the application.
+
+  Please use Adobe Acrobat to fill the form out to use the auto-fill GPA computation feature.
+  \vspace{0.35cm}
+
+  % Name:
+
+  \begin{tabular}{lr}
+    \TextField[width=\textfieldwidth,altname=name]{\AdjustSize{Name:}}        \\
+    \TextField[width=\textfieldwidth,altname=email]{\AdjustSize{WSU email:}}  \\
+    \TextField[width=\textfieldwidth,altname=wnumber]{\AdjustSize{W number:}} \\
+  \end{tabular}
+
+  \begin{tabular}[t]{l l c c c c c c c}
+    Course            & Letter Grade           & Grade Value$^1$     &          & Hours &     & Points                 & Semester/Year  \\
+    \hline
+    MATH 1210         & \LetterField{math1210} & \NumField{math1210} & $\times$ & 4     & $=$ & \PtsField{math1210}{4} & \AutoTextField \\
+    MATH 1220         & \LetterField{math1220} & \NumField{math1220} & $\times$ & 4     & $=$ & \PtsField{math1220}{4} & \AutoTextField \\
+    CHEM 1210         & \LetterField{chem1210} & \NumField{chem1210} & $\times$ & 4     & $=$ & \PtsField{chem1210}{4} & \AutoTextField \\
+    CHEM 1215         & \LetterField{chem1215} & \NumField{chem1215} & $\times$ & 1     & $=$ & \PtsField{chem1215}{1} & \AutoTextField \\
+    CHEM 1220         & \LetterField{chem1220} & \NumField{chem1220} & $\times$ & 4     & $=$ & \PtsField{chem1220}{4} & \AutoTextField \\
+    CHEM 1225         & \LetterField{chem1225} & \NumField{chem1225} & $\times$ & 1     & $=$ & \PtsField{chem1225}{1} & \AutoTextField \\
+    PHYS 2210         & \LetterField{phys2210} & \NumField{phys2210} & $\times$ & 5     & $=$ & \PtsField{phys2210}{5} & \AutoTextField \\
+    PHYS 2220         & \LetterField{phys2220} & \NumField{phys2220} & $\times$ & 5     & $=$ & \PtsField{phys2220}{5} & \AutoTextField \\
+    MICR 2054         & \LetterField{micr2054} & \NumField{micr2054} & $\times$ & 4     & $=$ & \PtsField{micr2054}{4} & \AutoTextField \\
+    BME 1000$^2$      & \LetterField{bme1000}  & \NumField{bme1000}  & $\times$ & 2     & $=$ & \PtsField{bme1000}{2}  & \AutoTextField \\
+    BME 2000          & \LetterField{bme2000}  & \NumField{bme2000}  & $\times$ & 1     & $=$ & \PtsField{bme2000}{1}  & \AutoTextField \\
+    ECE 1270          & \LetterField{ece1270}  & \NumField{ece1270}  & $\times$ & 4     & $=$ & \PtsField{ece1270}{4}  & \AutoTextField \\
+    ECE 1400          & \LetterField{ece1400}  & \NumField{ece1400}  & $\times$ & 4     & $=$ & \PtsField{ece1400}{4}  & \AutoTextField \\
+    ECE 2260          & \LetterField{ece2260}  & \NumField{ece2260}  & $\times$ & 4     & $=$ & \PtsField{ece2260}{4}  & \AutoTextField \\
+    ECE 2700          & \LetterField{ece2700}  & \NumField{ece2700}  & $\times$ & 4     & $=$ & \PtsField{ece2700}{4}  & \AutoTextField \\
+    ENGR 2240$^{3,4}$ & \LetterField{engr2240} & \NumField{engr2240} & $\times$ & 4     & $=$ & \PtsField{engr2240}{4} & \AutoTextField \\
+
+    \hline
+  \end{tabular}
+  \\
+  {\footnotesize $^1$Grade Values: A=4.00, A-=3.66, B+=3.33, B=3.00, B-=2.66, C+=2.33, C=2.00\\
+  $^2$You may substitute ENGR 1000 or ECE 1000 in lieu of BME 1000.\\
+  $^3$If you have taken MATH 2250 instead of ENGR 2240, please enter the letter grade of that course.\\
+  $^4$If you have taken MATH 2270 and MATH 2280 instead of ENGR 2240, enter the average letter grade of the two courses.  If the average is between grades, round up.  E.g., if you get an A in MATH 2270 and a A- in MATH 2280, enter an A for ENGR 2240.
+  }
+
+  \TextField[width=2cm,
+    name=gpa,
+    readonly=true,
+    align=1,
+    readonly=true,
+    calculate={%
+        var math1210 = this.getField("math1210pts");
+        var math1220 = this.getField("math1220pts");
+        var chem1210 = this.getField("chem1210pts");
+        var chem1215 = this.getField("chem1215pts");
+        var chem1220 = this.getField("chem1220pts");
+        var chem1225 = this.getField("chem1225pts");
+        var phys2210 = this.getField("phys2210pts");
+        var phys2220 = this.getField("phys2220pts");
+        var micr2054 = this.getField("micr2054pts");
+        var bme1000 = this.getField("bme1000pts");
+        var bme2000 = this.getField("bme2000pts");
+        var ece1270 = this.getField("ece1270pts");
+        var ece1400 = this.getField("ece1400pts");
+        var ece2260 = this.getField("ece2260pts");
+        var ece2700 = this.getField("ece2700pts");
+        var engr2240 = this.getField("engr2240pts");
+        var total_points = math1210.value +
+        math1220.value +
+        chem1210.value +
+        chem1215.value +
+        chem1220.value +
+        chem1225.value +
+        phys2210.value +
+        phys2220.value +
+        micr2054.value +
+        bme1000.value +
+        bme2000.value +
+        ece1270.value +
+        ece1400.value +
+        ece2260.value +
+        ece2700.value +
+        engr2240.value;
+        event.value = (total_points/55).toFixed(3);
+      },
+    altname={Pre-Professional GPA}
+  ]{Pre-Professional GPA:}
+
+
+  \vspace{0.5cm}
+  Student signature: \underline{\hspace{9cm}} \TextField[width=3cm,altname=date]{Date:}
+
+  % \vfill
+  % \underline{\hspace{\textwidth}}
+  % \emph{Office use: \hfill Admit: \underline{\hspace{4cm}} Decline: \underline{\hspace{4cm}}}
+
+\end{Form}
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
