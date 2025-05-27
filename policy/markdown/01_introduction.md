@@ -1,0 +1,11 @@
+<!-- filepath: /Users/gibbons/Dropbox/Documents/Work/weber/forms/ece-department-handbook/markdown/01_introduction.md -->
+
+# Introduction
+
+Welcome to the Department of Electrical and Computer Engineering at Weber State University! As a student in our Electrical, Computer, or Biomedical Engineering program, you embark on an exciting journey of discovery, innovation, and personal growth. This handbook is designed to provide essential information about the program’s curriculum, academic policies, resources, and opportunities available during your undergraduate studies. We encourage you to familiarize yourself with the contents of this handbook and refer to it whenever you have questions about your academic journey.
+
+The Department of Electrical and Computer Engineering at Weber State University is committed to providing high-quality education and fostering a supportive learning environment for aspiring electrical, computer, and biomedical engineers. Our faculty members are experts in various engineering fields and are dedicated to helping you succeed academically and professionally. Our state-of-the-art laboratories, cutting-edge research initiatives, and collaborative learning opportunities ensure that you receive a well-rounded education and are prepared to tackle the challenges of the modern world.
+
+This handbook provides detailed information about the ECE department's curriculum, academic policies, available resources, and various opportunities to enhance your learning experience. We encourage you to take full advantage of the department's resources and support services to make the most of your time here.
+
+We wish you a fulfilling and successful academic journey in the Department of Electrical and Computer Engineering at Weber State.
