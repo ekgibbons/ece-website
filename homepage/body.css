@@ -1,0 +1,400 @@
+	<!-- css_tag_start -->
+
+	<!-- start the calendar -->
+	<!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/css/bootstrap.css'> -->
+	<!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css'> -->
+	<link rel="stylesheet" href="https://www.weber.edu/wsuimages/ece/site/ece-cal.css">
+	<!-- <link rel="stylesheet" href="./ece-cal.css"> -->
+
+
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.js'></script>
+	<script src="https://www.weber.edu/wsuimages/ece/site/ece-cal.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/js/bootstrap.js'></script>
+	<!-- end the calendar -->
+
+	<link rel="stylesheet" type="text/css"
+		href="https://www.weber.edu/wsuimages/davidbrogan/css/secondary-logo-patch.css" />
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script> -->
+	<!-- <script> -->
+	<!--   $(document).ready(function() { -->
+	<!-- 	  $("#news-slider").owlCarousel({ -->
+	<!-- 	      items : 3, -->
+	<!-- 	      itemsDesktop:[1199,3], -->
+	<!-- 	      itemsDesktopSmall:[980,2], -->
+	<!-- 	      itemsMobile : [600,1], -->
+	<!-- 	      navigation:true, -->
+	<!-- 	      navigationText:["",""], -->
+	<!-- 	      pagination:false, -->
+	<!-- 	      autoPlay:false -->
+	<!-- 	  }); -->
+	<!--   }); -->
+	<!--   $(document).scroll(function() { -->
+
+	<!-- 	  myID = document.getElementById("advertisement"); -->
+
+	<!-- 	  var myScrollFunc = function () { -->
+	<!-- 	      var y = window.scrollY; -->
+	<!-- 	      if (y >= 900) { -->
+	<!-- 	  	  myID.className = "advertisement show" -->
+	<!-- 	      } else { -->
+	<!-- 	  	  myID.className = "advertisement hide" -->
+	<!-- 	      } -->
+	<!-- 	  }; -->
+
+	<!-- 	  window.addEventListener("scroll", myScrollFunc); -->
+	<!--   }); -->
+	<!-- </script> -->
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"> -->
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+	<style>
+		.hide {
+			opacity: 0;
+			left: -100%;
+		}
+
+		.show {
+			opacity: 1;
+			left: 0;
+		}
+
+		p.small_gap {
+			line-height: 1.1;
+		}
+
+		span.small_gap {
+			line-height: 1.1;
+		}
+
+
+		@media only screen and (min-width:1280px) {
+			#noorda {
+				min-height: 100px;
+			}
+
+			span.huge {
+				font-size: 45px;
+			}
+		}
+
+		@media only screen and (max-width:1279px) and (min-width: 769px) {
+			#noorda {
+				min-height: 500px;
+			}
+
+			span.huge {
+				font-size: 40px;
+			}
+
+		}
+
+		@media only screen and (max-width:768px) {
+			#noorda {
+				min-height: 500px;
+			}
+
+			span.huge {
+				font-size: 35px;
+			}
+
+		}
+
+
+
+		/*************************************************************************************************************************************************** text */
+		.intro {
+			padding-top: 1.5em;
+			padding-left: 2em;
+		}
+
+		.online {
+			border-left: 4px solid #492365;
+			padding-left: 1em;
+		}
+
+		.purple {
+			color: #492365;
+			text-transform: uppercase;
+		}
+
+		.arrow1 {
+			width: 3%;
+		}
+
+		.arrow-white {
+			width: 2%;
+		}
+
+		.sections-title {
+			font-size: 2em;
+		}
+
+		/* /\*************************************************************************************************************************************************** partners*\/ */
+		/* #advertisement {margin-left:-1em;} */
+		/* .partners2 {margin-left:0.7em;} */
+		/* .partners {padding:2em; } */
+		/* .partners-line {border-top: 0.5px solid #4b4945;} */
+		/* .partners img {  filter: url(filters.svg#grayscale);  /\* Firefox 3.5+ *\/  filter: gray;  /\* IE6-9 *\/  -webkit-filter: grayscale(1);} */
+		/* .partners img:hover {  filter: none;  -webkit-filter: none;} */
+
+		/* @media only screen and (max-width:440px){ */
+		/* 	  .partners {padding:0em;display:  } */
+		/* } */
+
+
+
+		@media only screen and (max-width:1280px) {
+			.post-slide .post-content {
+				padding: 0px 15px 25px 15px;
+			}
+		}
+
+		.hvrbox .hvrbox-layer_slideleft {
+			-moz-transform: translateX(100%);
+			-webkit-transform: translateX(100%);
+			-ms-transform: translateX(100%);
+			transform: translateX(100%);
+
+		}
+
+		.hvrbox:hover .hvrbox-layer_slideleft,
+		.hvrbox.active .hvrbox-layer_slideleft {
+			-moz-transform: translateX(0);
+			-webkit-transform: translateX(0);
+			-ms-transform: translateX(0);
+			transform: translateX(0);
+		}
+
+		.hvrbox,
+		.hvrbox * {
+			box-sizing: border-box;
+		}
+
+		.hvrbox {
+			position: relative;
+			display: inline-block;
+			overflow: hidden;
+			max-width: 100%;
+			height: auto;
+		}
+
+		.hvrbox img {
+			max-width: 100%;
+		}
+
+		.hvrbox .hvrbox-layer_bottom {
+			display: block;
+		}
+
+		.hvrbox .hvrbox-layer_top {
+			opacity: 0;
+			position: absolute;
+			top: 65%;
+			left: 45%;
+			right: 0;
+			bottom: 0;
+			width: 60%;
+			height: 35%;
+			background-color: #492365;
+			color: #fff;
+			padding: 15px;
+			-moz-transition: all 0.4s ease-in-out 0s;
+			-webkit-transition: all 0.4s ease-in-out 0s;
+			-ms-transition: all 0.4s ease-in-out 0s;
+			transition: all 0.4s ease-in-out 0s;
+		}
+
+		.hvrbox:hover .hvrbox-layer_top,
+		.hvrbox.active .hvrbox-layer_top {
+			opacity: 1;
+		}
+
+		.hvrbox .hvrbox-text {
+			text-align: center;
+			font-size: 15px;
+			display: inline-block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-moz-transform: translate(-50%, -50%);
+			-webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+
+		.hvrbox .hvrbox-text_mobile {
+			font-size: 15px;
+			border-top: 1px solid rgb(179, 179, 179);
+			/* for old browsers */
+			border-top: 1px solid rgba(179, 179, 179, 0.7);
+			margin-top: 5px;
+			padding-top: 2px;
+			display: none;
+		}
+
+		.hvrbox.active .hvrbox-text_mobile {
+			display: block;
+		}
+
+		.box-link a:hover {
+			color: #fff;
+		}
+
+		.owl-controls {
+			float: right;
+			padding-right: 1%;
+			margin-top: -33%;
+		}
+
+		#gray {
+			background-color: white;
+		}
+	</style>
+
+
+	<link rel="stylesheet" type="text/css"
+		href="https://weber.edu/framework/styles/css/site-manager-templates/showcase/dropdown.css" />
+	<meta content="Weber State University Electrical &amp; Computer Engineering Department includes:
+																		       Electronics Engineering Technology
+																		       Electrical Engineering
+																		       Computer Engineering" name="description" />
+	<style>
+		.showcase-html-section h1 {
+			color: #492365;
+			font-family: 'tradegothicltstd-boldext', sans-serif;
+			padding-top: 20px;
+			padding-bottom: 3px;
+		}
+
+		.showcase-html-section h2 {
+			color: #492365;
+			font-size: 22px;
+		}
+
+		.showcase-html-section {
+			padding-top: 0;
+		}
+
+		.banner {
+			width: 100%;
+		}
+
+		.vector {
+			width: 150px;
+			height: 150px;
+		}
+
+		.logo {
+			width: 50%;
+			height: 50%;
+		}
+
+		/* .purplebg {background: url(https://www.weber.edu/wsuimages/ece/weberstate-purple-campus.png); */
+		/* 		 background-size: cover; */
+		/* 		 background-color: #575047; */
+		/* 		 padding:3em;} */
+		.purplebg p {
+			color: #fff;
+			font-type: 'tradegothiclt-light', sans-serif;
+		}
+
+		.purplebg h2 {
+			color: #fff;
+		}
+
+		.gray {
+			background-color: #f3f3f3;
+			padding-top: 2em;
+			margin: 0;
+			padding-bottom: 2em;
+			margin: 0;
+		}
+
+		/*contact*/
+		.contact {
+			padding: 15px;
+			text-align: center;
+		}
+
+		/*button*/
+		.button.degrees {
+			display: inline-block;
+			color: #fff;
+			border: 1px solid #fff;
+			text-align: center;
+			background-color: transparent;
+		}
+
+		.button:hover {
+			background-color: #fff;
+			background-color: #d25d12;
+			border-color: #fff;
+			transition: background-color 0.3s ease-in, border-color 0.1s ease-in;
+		}
+
+		.button.secondary {
+			background-color: #575047
+		}
+
+
+		/*boxes*/
+		.feature-box {
+			background-color: #fff;
+			padding: 1.5em;
+		}
+
+		.purple {
+			background: url(https://www.weber.edu/wsuimages/msee/msee_thumbnail.png);
+			background-size: cover;
+			padding: 1em;
+			margin-top: 0;
+			text-align: center;
+		}
+
+		.purplesection {
+			background-color: #492365;
+			padding: 1em;
+			margin-top: 0;
+
+		}
+
+		@media (max-width: 767px) {
+			.desktop-only {
+				display: none !important;
+			}
+
+			.mobile-only {
+				display: block !important;
+			}
+		}
+
+		@media (min-width: 768px) {
+			.desktop-only {
+				display: block !important;
+			}
+
+			.mobile-only {
+				display: none !important;
+			}
+		}
+	</style>
+	<script type='text/javascript' src='https://weber.edu/prebuilt/display_template.js'></script>
+	<script src="https://cdn.jsdelivr.net/npm/regenerator-runtime@0.13.7/runtime.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+	<link rel="stylesheet" href="https://www.weber.edu/wsuimages/webdev/base/code/v1/styles.css" />
+	<script src="https://www.weber.edu/wsuimages/webdev/base/code/v1/scripts.js"></script>
+	<link rel="stylesheet" href="https://www.weber.edu/wsuimages/acadweb/styles/itcustom_v3_0.css">
+	<script src="https://www.weber.edu/wsuimages/acadweb/scripts/itmenu_v2_1.js"></script>
+	<script src="https://www.weber.edu/wsuimages/acadweb/scripts/parallax2.js"></script>
+
+
+
+
+
+	<!-------------------  CUSTOM ENDS HERE ----------------------------------------->
+	<!------------------------------------------------------------------------------->
+
+
