@@ -1,0 +1,901 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head id="Head1"><title>
+      Electrical & Computer Engineering Department
+    </title><link rel="stylesheet" type="text/css" href="https://weber.edu/ui/slick/slick.css" />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    <!-- <link rel="stylesheet" type="text/css" href="/framework/foundation/v6/css/app.css"> -->
+    <!-- 	<link rel="stylesheet" type="text/css" href="/ui/foundation-icons/foundation-icons.css" /> -->
+    <!-- 	<link rel="stylesheet" type="text/css" href="/framework/styles/css/main/wsu-main.css"> -->
+    <!-- 	<link rel="stylesheet" type="text/css" href="/framework/styles/css/main/responsive-tables.css" /> -->
+    <!-- 	<link rel="stylesheet" type="text/css" href="/framework/styles/css/main/control-strip.css"> -->
+
+    <!-- 	<script src="/framework/foundation/v6/bower_components/modernizr/modernizr.js"></script> -->
+    <!-- 	<script src="/framework/foundation/v6/bower_components/jquery/dist/jquery.min.js"></script> -->
+
+    <link rel="stylesheet" type="text/css" href="https://weber.edu/framework/foundation/v6.5/css/app.css">
+    <link rel="stylesheet" type="text/css" href="https://weber.edu/ui/foundation-icons/foundation-icons.css" />
+    <link rel="stylesheet" type="text/css" href="https://weber.edu/framework/styles/css/main/wsu-main.css" />
+    <link rel="stylesheet" type="text/css" href="https://weber.edu/framework/styles/css/main/responsive-tables.css" />
+    <link rel="stylesheet" type="text/css" href="https://weber.edu/framework/styles/css/main/control-strip.css">
+    <script src="https://weber.edu/framework/foundation/v6.5/js/modernizr.js"></script>
+    <script src="https://weber.edu/framework/foundation/v6.5/node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="https://weber.edu/framework/scripts/responsive-tables.js"></script>
+
+    <!-- Tag Manager -->
+
+    <!-- Google Tag Manager -->    
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+						    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			  })(window,document,'script','dataLayer','GTM-MPNLQ3X');
+    </script>
+    <!-- End Google Tag Manager -->
+    <link rel="stylesheet" type="text/css" href="/framework/styles/css/site-manager-templates/showcase/dropdown.css" /><meta content="Weber State University Electrical &amp;amp; Computer Engineering Department includes:Electronics Engineering TechnologyElectrical EngineeringComputer Engineering" name="description" />  
+
+    <!--------------------------------------------------------------------------------------->
+    <!-------------------  CUSTOM STUFF STARTS HERE ----------------------------------------->
+    <!-- css_tag_start -->
+    
+    <!-- start the calendar -->
+    <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/css/bootstrap.css'> -->
+    <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css'> -->
+    <link rel="stylesheet" <!-- href="https://www.weber.edu/wsuimages/ece/site/ece-cal.css"> -->
+	  <link rel="stylesheet" href="./ece-cal.css">
+	  
+
+	  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
+	  <script src='https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.js'></script>
+	  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js'></script>
+	  <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.js'></script>
+	  <script src="https://www.weber.edu/wsuimages/ece/site/ece-cal.js"></script>
+	  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/js/bootstrap.js'></script>
+	  <!-- end the calendar -->
+
+	  <link rel="stylesheet" type="text/css" href="https://www.weber.edu/wsuimages/davidbrogan/css/secondary-logo-patch.css" />
+	  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+	  <script>
+	    $(document).ready(function() {
+		$("#news-slider").owlCarousel({
+		    items : 3,
+		    itemsDesktop:[1199,3],
+		    itemsDesktopSmall:[980,2],
+		    itemsMobile : [600,1],
+		    navigation:true,
+		    navigationText:["",""],
+		    pagination:false,
+		    autoPlay:false
+		});
+	    });
+	    $(document).scroll(function() {
+		
+		myID = document.getElementById("advertisement");
+		
+		var myScrollFunc = function () {
+		    var y = window.scrollY;
+		    if (y >= 900) {
+			myID.className = "advertisement show"
+		    } else {
+			myID.className = "advertisement hide"
+		    }
+		};
+		
+		window.addEventListener("scroll", myScrollFunc);
+	    });
+	  </script>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <style>
+	    .hide {
+		opacity:0;
+		left:-100%;
+	    }
+	    .show {
+		opacity:1;
+		left:0;
+	    }
+	    p.small_gap {
+		line-height: 1.1;
+	    }
+	    span.small_gap {
+		line-height: 1.1;
+	    }
+	    .showcase-html-section{padding-top:0;padding-bottom:1em;}
+
+	    .showcase-html-section{padding-top:0;padding-bottom:1em;}
+	    /*************************************************************************************************************************************************** hero */
+	    .showcase-html-section h1 {
+		font-family: "tradegothicltcom-bdcn20",sans-serif;
+		text-transform: uppercase!important;
+		color: #FFF;
+		font-size: calc(90px + 2vw);
+		line-height: 1em;
+		margin-top: 40%;
+		margin-left: 60%;
+		text-align:right;
+		opacity:0.7;
+	    }
+
+	    @media only screen and (max-width: 1400px) {
+		.showcase-html-section h1 {
+		    display: inline;
+		    font-family: "tradegothicltcom-bdcn20",sans-serif;
+		    text-transform: uppercase!important;
+		    color: rgba(234, 240, 246, 0.8);
+		    font-size: calc(30px + 2vw);
+		    line-height: 1em;
+		    margin: 0;
+		    text-align:center;
+
+		}}
+	    @media only screen 
+	    and (min-device-width: 768px) 
+	    and (max-device-width: 1024px)  {
+		.showcase-html-section  h1 {
+		    font-family: "tradegothicltcom-bdcn20",sans-serif;
+		    text-transform: uppercase!important;
+		    color: #FFF;
+		    font-size: calc(90px + 2vw);
+		    line-height: 1em;
+		    text-align:center;
+		    margin-top: 50%;
+		    margin-left: 50%;
+		}
+	    }
+
+	    .banner {
+		background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.02)), url('https://www.weber.edu/wsuimages/sales/homepage/sales-21.jpg') no-repeat center center;
+		background-size: cover;
+		color: #fff;
+		display: flex;
+	    }
+	    .banner:before {
+		content: "";
+		float: left;
+		padding-bottom: 40%;
+	    }
+	    .banner:after {
+		content: "";
+		display: table;
+		clear: both;
+	    }
+	    .container {
+		max-width: 768px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	    }
+	    .content {
+		text-align: center;
+		padding: 20px;
+	    }
+	    /*************************************************************************************************************************************************** text */
+	    .intro {padding-top:1.5em;  padding-left:2em;}
+	    .online {border-left: 4px solid #492365;padding-left:1em;}
+	    .purple {color:#492365;text-transform: uppercase;}
+	    .arrow1 {width:3%;}
+	    .arrow-white {width:2%;}
+	    .sections-title {font-size:2em;}
+	    /* /\*************************************************************************************************************************************************** partners*\/ */
+	    #advertisement {margin-left:-1em;}
+	    .partners2 {margin-left:0.7em;}
+	    .partners {padding:2em; }
+	    .partners-line {border-top: 0.5px solid #4b4945;}
+	    .partners img {  filter: url(filters.svg#grayscale);  /* Firefox 3.5+ */  filter: gray;  /* IE6-9 */  -webkit-filter: grayscale(1);}
+	    .partners img:hover {  filter: none;  -webkit-filter: none;}
+
+	    @media only screen and (max-width:440px){
+		.partners {padding:0em;display:  }
+	    }
+
+	    /* /\*************************************************************************************************************************************************** lazyload*\/ */
+
+	    .fade-in-left.lazyloaded {position:relative;animation:animateleft 3s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+
+	    .fade-in-right.lazyloaded{position:relative;animation:animateright 3s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+
+	    
+	    #gray {
+		background-color: white;
+	    }
+
+	  </style>
+
+	  
+	  <link rel="stylesheet" type="text/css" href="https://weber.edu/framework/styles/css/site-manager-templates/showcase/dropdown.css" /><meta content="Weber State University Electrical &amp; Computer Engineering Department includes:
+																			     Electronics Engineering Technology
+																			     Electrical Engineering
+																			     Computer Engineering" name="description" /><style>
+	    .showcase-html-section h1 {color: #492365;font-family: 'tradegothicltstd-boldext', sans-serif;padding-top:20px;padding-bottom:3px;}
+	    .showcase-html-section h2 {color: #492365;font-size:22px;}
+	    .showcase-html-section{padding-top:0;}
+
+	    .banner{width:100%;}
+	    .vector {width:150px;height:150px;}
+	    .logo {width:50%;height:50%;}
+
+	    .purplebg {background: url(https://www.weber.edu/wsuimages/ece/weberstate-purple-campus.png);
+		       background-size: cover;
+		       background-color: #575047;
+		       padding:3em;}
+	    .purplebg p {color:#fff;
+			 font-type: 'tradegothiclt-light', sans-serif;}
+	    .purplebg h2 {color:#fff;}
+
+	    /* .gray {background-color:color-2}/\* ;padding-top:2em;margin:0;padding-bottom:2em;margin:0;} *\/ */
+
+	    .my_gray {background-color:color-2}
+	    /*contact*/
+	    .contact {padding:15px;text-align:center;}
+
+	    /*button*/
+	    .button.degrees {display: inline-block;color: #fff;border: 1px solid #fff;text-align: center;background-color: transparent;}
+	    .button:hover { background-color: #fff;background-color: #d25d12; border-color: #fff; transition: background-color 0.3s ease-in,border-color 0.1s ease-in;}
+	    .button.secondary {background-color: #575047}
+
+
+	    /*boxes*/
+	    .feature-box {background-color:#fff;padding:1.5em;}
+	    .purple {background: url(https://www.weber.edu/wsuimages/msee/msee_thumbnail.png); background-size: cover; padding:1em;margin-top:0;text-align:center;}
+
+
+	  </style><script type='text/javascript' src='https://weber.edu/prebuilt/display_template.js'></script></head>
+  <script src="https://cdn.jsdelivr.net/npm/regenerator-runtime@0.13.7/runtime.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+  <link rel="stylesheet" href="https://www.weber.edu/wsuimages/webdev/base/code/v1/styles.css" />
+  <script src="https://www.weber.edu/wsuimages/webdev/base/code/v1/scripts.js"></script>
+  <link rel="stylesheet" href="https://www.weber.edu/wsuimages/acadweb/styles/itcustom_v3_0.css">
+  <script src="https://www.weber.edu/wsuimages/acadweb/scripts/itmenu_v2_1.js"></script>
+  <script src="https://www.weber.edu/wsuimages/acadweb/scripts/parallax2.js"></script>
+
+
+  <!-------------------  CUSTOM ENDS HERE ----------------------------------------->
+  <!------------------------------------------------------------------------------->
+  <!-- css_tag_end -->
+  
+
+
+
+  <body id="Body">
+    
+    
+
+    <!--Begin Header-->
+
+    <header class="main-header">
+      <div class="skip-to-content"><a href="#skipToContent">skip to content</a></div>
+      <span class="switch show-for-large-down"><button type="button"><img src="https://weber.edu/ui/images/icons/control-strip/menu.svg" alt="Navigation Menu"></button></span>
+      
+      <div class="row">
+
+        <div class="xlarge-7 columns text-left">
+          <ul class="top-nav show-for-xlarge-up">
+	    <li><a href="http://www.weber.edu">WSU Home</a></li><li><a href="https://portalapps.weber.edu/eweber/default.aspx">eWeber</a></li><li><a href="https://portalapps.weber.edu/directory/default.aspx">Campus Directory</a></li><li><a href="/wsuonline/">WSU Online</a></li><li class="com-sub-li"><a role="menuitem" aria-haspopup="true" class="com-link">Info for</a><div class="com-sub-container"><ul class="com-sub"><li><a href="/currentstudents/">Current&nbsp;Students</a></li><li><a href="/facultystaff/">Faculty&nbsp;&amp;&nbsp;Staff</a></li><li><a href="http://alumni.weber.edu/">Alumni</a></li><li><a href="/visitors/">Visitors</a></li></ul></div></li>
+	  </ul>
+        </div>
+        
+	<div class="xlarge-5 large-12 columns">
+          <ul class="header-icons">
+            <li style="display:none;" id="liLogin"><a href="https://portalapps.weber.edu/eweber/default.aspx?usecas=true"><img src="/ui/images/icons/control-strip/profile.svg" alt="Log In"></a></li>
+            <li style="display:none;" id="liProfile"><button type="button" id="btnProfile"><img src="/ui/images/icons/control-strip/standard-logged-in.svg" alt="Profile Menu and Log Out"></button></li>
+            <li style="display:none;" id="liAlerts"><button type="button" id="alertsButton"><img src="/ui/images/icons/control-strip/alerts.svg" alt="Alerts"></button></li>
+            <li><button type="button" id="notificationsButton"><img src="https://weber.edu/ui/images/icons/control-strip/notifications.svg" alt="Notifications"></button></li>
+            <li><button type="button" id="searchButton"><img src="https://weber.edu/ui/images/icons/control-strip/search.svg" alt="Search"></button></li>
+            <li><button type="button" id="azButton"><img src="https://weber.edu/ui/images/icons/control-strip/a-z.svg" alt="A to Z Index"></button></li>
+            <li><a href="http://apps.weber.edu/calendars/" id="calendarLink"><img src="https://weber.edu/ui/images/icons/control-strip/calendar.svg" alt="Calendar"></a></li>
+            <li><a href="http://www.weber.edu/weberstatemap/" id="mapsLink"><img src="https://weber.edu/ui/images/icons/control-strip/maps.svg" alt="Maps"></a></li>
+    	  </ul>
+          <div class="cover-icons"></div>
+        </div>
+      </div>
+    </header>
+    
+    <div class="header-dropdowns">
+      <div id="searchDropdown" class="search-dropdown">
+	<div class="row">
+	  <div class="search-bar-desktop">
+	    <gcse:search></gcse:search>
+	  </div>
+	</div>
+      </div>
+
+      <div id="profileDropdown" class="row" tabindex="0"></div>
+
+      <div id="notificationsDropdown" tabindex="0"></div>
+
+      <div id="alertsDropdown" class="wsu-alert-dropdown" tabindex="0"></div>
+
+      <div id="azDropdown" class="a-z-dropdown" tabindex="0">
+	<div class="row">
+	  <div class="a-z-letters">
+	    <button>A</button><button>B</button><button>C</button><button>D</button><button>E</button><button>F</button><button>G</button><button>H</button><button>I</button><button>J</button><button>K</button><button>L</button><button>M</button>
+	    <button>N</button><button>O</button><button>P</button><button>Q</button><button>R</button><button>S</button><button>T</button><button>U</button><button>V</button><button>W</button><button>X</button><button>Y</button><button>Z</button>
+	  </div>
+	</div>
+      </div>
+    </div>
+    
+    <!--<div class="header-dropdowns">
+        <div id="searchDropdown" class="search-dropdown">
+          <div class="row">
+            <div class="search-bar-desktop">
+              <gcse:search></gcse:search>
+            </div>
+	  </div>
+        </div>
+	
+        <div id="profileDropdown" class="row"></div>
+
+        <div id="notificationsDropdown"></div>
+
+        <div id="alertsDropdown" class="wsu-alert-dropdown"></div>
+
+        <div id="azDropdown" class="a-z-dropdown">
+          <div class="row">
+            <div class="a-z-letters">
+              <a>A</a><a>B</a><a>C</a><a>D</a><a>E</a><a>F</a><a>G</a><a>H</a><a>I</a><a>J</a><a>K</a><a>L</a><a>M</a>
+              <a>N</a><a>O</a><a>P</a><a>Q</a><a>R</a><a>S</a><a>T</a><a>U</a><a>V</a><a>W</a><a>X</a><a>Y</a><a>Z</a>
+            </div>
+	  </div>
+        </div>
+    </div>-->
+    <!-- End Header -->
+
+    
+    <aside id="navAccordian"  class="sidebar">
+      <div><a class="home-link" href="https://www.weber.edu">WSU Home</a> <a class="home-link" href="https://portalapps.weber.edu/eweber/">eWeber</a> <a class="home-link" href="https://portalapps.weber.edu/directory/default.aspx">Campus Directory</a> <a class="home-link" href="https://continue.weber.edu/wsuonline/">WSU Online</a></div>
+
+      <ul class="vertical menu" data-accordion-menu="">
+	<li class="accordion-navigation"><a class="nav-title" href="#admissions">Admissions</a>
+
+	  <ul class="off-canvas-list vertical menu nested" id="admissions">
+	    <li><a href="https://www.weber.edu/admissions/">Admissions Home</a></li>
+	    <li><a href="https://weber.elluciancrmrecruit.com/Apply/Account/Login">Apply</a></li>
+	    <li><a href="https://www.weber.edu/affordability">Affordability</a></li>
+	    <li><a href="https://www.weber.edu/admissions/shared/costs.html">Tuition &amp; Costs</a></li>
+	    <li><a href="https://www.weber.edu/financialaid">Financial Aid &amp; Scholarships</a></li>
+	    <li><a href="https://portalapps.weber.edu/majors/">Majors, Minors &amp; Programs</a></li>
+	    <li><a href="https://www.weber.edu/getintoweber/visitcampus.html">Visit Campus</a></li>
+	  </ul>
+	</li>
+	<li class="accordion-navigation"><a class="nav-title" href="#academics">Academics</a>
+	  <ul class="vertical menu nested off-canvas-list" id="academics">
+	    <li><a href="https://www.weber.edu/academics/">Academics Home</a></li>
+	    <li><a href="https://www.weber.edu/majors/">Majors, Minors &amp; Programs</a></li>
+	    <li><a href="https://www.weber.edu/academics/colleges-and-departments.html">Colleges &amp; Departments</a></li>
+	    <li><a href="https://library.weber.edu/">Stewart Library</a></li>
+	    <li><a href="https://www.weber.edu/OUR">Undergraduate Research</a></li>
+	    <li><a href="https://www.weber.edu/graduateprograms/">Graduate Programs</a></li>
+	    <li><a href="https://apps.weber.edu/calendars/calendars.aspx?calendar=academic">Academic Calendar</a></li>
+	    <li><a href="http://catalog.weber.edu/">Catalog</a></li>
+	    <li><a href="https://bannerprod.weber.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search">Class Schedule</a></li>
+	  </ul>
+	</li>
+	<li class="accordion-navigation"><a class="nav-title" href="#student-life">Student Life &amp; Safety</a>
+	  <ul class="vertical menu nested off-canvas-list" id="student-life">
+	    <li><a href="https://www.weber.edu/safeatweber">Safe@Weber</a></li>
+	    <li><a href="https://www.weber.edu/studentlife/">Student Life Home</a></li>
+	    <li><a href="https://www.weber.edu/StudentInvolvement">Student Involvement</a></li>
+	    <li><a href="https://www.weber.edu/campusrecreation/">Campus Recreation</a></li>
+	    <li><a href="https://www.weber.edu/union/">Shepherd Union</a></li>
+	    <li><a href="https://apps.weber.edu/calendars/">Events Calendar</a></li>
+	    <li><a href="https://www.weber.edu/housing/">Housing &amp; Residence Life</a></li>
+	    <li><a href="https://www.weber.edu/StudentAffairs/departments.html">Student Services</a></li>
+	  </ul>
+	</li>
+	<li class="accordion-navigation"><a class="nav-title" href="#about-wsu">About WSU</a>
+	  <ul class="vertical menu nested off-canvas-list" id="about-wsu">
+	    <li><a href="https://www.weber.edu/AboutWSU/">About WSU Home</a></li>
+	    <li><a href="https://www.weber.edu/AboutWSU/history.html">History</a></li>
+	    <li><a href="https://www.weber.edu/AboutWSU/Locations.html">Campuses &amp; Locations</a></li>
+	    <li><a href="https://www.weber.edu/AboutWSU/awards.html">Honors &amp; Awards</a></li>
+	    <li><a href="https://www.weber.edu/wsutoday/">WSU News</a></li>
+	    <li><a href="https://jobs.weber.edu/">Jobs at Weber</a></li>
+	    <li><a href="https://www.weber.edu/IR/Disclosures.html">Public Disclosures</a></li>
+	  </ul>
+	</li>
+	<li class="accordion-navigation"><a class="nav-title" href="#info-for">Info for</a>
+	  <ul class="vertical menu nested off-canvas-list" id="info-for">
+	    <li><a href="https://www.weber.edu/currentstudents/">Current Students</a></li>
+	    <li><a href="https://www.weber.edu/facultystaff/">Faculty and Staff</a></li>
+	    <li><a href="http://www.alumni.weber.edu">Alumni</a></li>
+	    <li><a href="https://www.weber.edu/visitors/">Visitors</a></li>
+	  </ul>
+	</li>
+      </ul>
+
+      <div><a class="nav-title" href="https://apps.weber.edu/calendars/">Calendars</a> <a class="nav-title" href="https://www.weber.edu/weberstatemap/">Maps</a> <a class="nav-title" href="https://weber.edu/artscalendar">The Arts</a> <a class="nav-title" href="https://www.weberstatesports.com/"><img alt="" src="https://www.weber.edu/ui/images/athletic-logo.png" /> Athletics</a> <a class="nav-title" href="https://advancement.weber.edu/s/953/dream125/aa17/start.aspx?gid=16&amp;pgid=1801"><img alt="" src="https://www.weber.edu/ui/images/gift-icon.png" /> Give to WSU</a></div>
+
+    </aside>
+
+    <section class="template-header">
+      <div class="row">
+        <div>
+          <a href='https://www.weber.edu/east'><img src="https://www.weber.edu/wsuimages/ece/east-logo.svg" border="0" alt="College of Engineering Applied Science  Technology" class="primary-logo" /></a>
+          <div class="secondary-logo-holder"><a href='https://www.weber.edu/ece/default.html'><img src="https://www.weber.edu/wsuimages/ece/ece_isolated_white.svg" border="0" alt="Department of Electrical &amp; Computer Engineering" class="secondary-logo" /></a></div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="dropdown-nav">
+      <nav id="navDropdown">
+        <div Class="top-bar-holder">
+	  <div Class="row collapse">
+	    <div Class="column">
+	      <div Class="title-bar" data-responsive-toggle="main-menu" data-hide-for="xlarge">
+		<div Class="right">
+		  <Button type = "button" data-toggle><img src="https://weber.edu/ui/images/icons/random/drilldown-menu.svg" alt="Navigation Menu"></button>
+		</div>
+	      </div>
+	      <div Class="top-bar" id="main-menu">
+		<div Class="top-bar-right">
+		  <ul Class="menu" id="drilldown-menu" data-auto-height="true" data-responsive-menu="drilldown xlarge-dropdown">
+		    <li>
+		      <a href="https://www.weber.edu/ece/default.html" target='_self' >Home</a>
+		    </li>
+		    <li>
+		      <a href="https://weber.edu/ece/ece_at_weber_state.html" target='_self' >Why ECE at Weber State?</a>
+		    </li>
+		    <li>
+		      <a href="https://weber.edu/ece/faculty-staff.html" target='_self' >Faculty and Staff</a>
+		    </li>
+		    <li>
+		      <a href="#" target='_self' >Degrees</a>
+		      <ul class="submenu menu vertical">
+			<li class='hide-for-xlarge-up'><a href="#" >Degrees</a></li>
+			<li><a href="https://weber.edu/ece/electrical-engineering.html" >Electrical Engineering</a></li>
+			<li><a href="https://weber.edu/ece/computer-engineering.html" >Computer Engineering</a></li>
+			<li><a href="https://weber.edu/ece/eet.html" >Electronics Engineering Technology</a></li>
+			<li><a href="https://www.weber.edu/MSEE" target='_blank'>Master of Science in Electrical Engineering</a></li>
+			<li><a href="https://weber.edu/msce" target='_blank'> Master of Science in Computer Engineering</a></li>
+			<li><a href="https://www.weber.edu/engineering" target='_blank'>Other Engineering Degrees</a></li>
+		      </ul>
+		    </li>
+		    <li>
+		      <a href="#" target='_self' >Student Resources</a>
+		      <ul class="submenu menu vertical">
+			<li class='hide-for-xlarge-up'><a href="#" >Student Resources</a></li>
+			<li><a href="https://weber.edu/ece/advising.html" >ECE Advising</a></li>
+			<li><a href="https://weber.edu/ece/jobs.html" >Current Job Opportunities</a></li>
+			<li><a href="https://weber.edu/ece/announcements.html" >Announcements</a></li>
+			<li><a href="https://weber.edu/ece/scholarships.html" >Scholarships</a></li>
+			<li><a href="https://weber.edu/ece/ieee.html" >IEEE Club</a></li>
+			<li><a href="https://weber.edu/ece/linux-lab.html" >Linux Lab</a></li>
+		      </ul>
+		    </li>
+		    <li>
+		      <a href="https://weber.edu/ece/senior-projects.html" target='_self' >Senior Projects</a>
+		    </li>
+		    <li>
+		      <a href="https://weber.edu/ece/abet.html" target='_self' >ABET Accreditation</a>
+		    </li>
+		    <li>
+		      <a href="https://weber.edu/ece/contact.html" target='_self' >Contact Us</a>
+		    </li>
+		  </ul>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+      </nav>
+    </section>
+    <a id="skipToContent"></a>
+    <section id="banner">
+      
+    </section>
+    <!--------------------------------------------------------------------------------------->
+    <!-------------------  CUSTOM STUFF STARTS HERE ----------------------------------------->
+    <!-- body_tag_start -->
+
+    <section class="section parallax" style="min-height:100px">
+      <img alt="" class="parallax__image" src="https://apps.weber.edu/wsuimages/ece/site_photos/moench_fall.jpg" style="top:-20%"/>
+      <div class="container">
+	<div class="hero">
+	  <div class="row">
+	    <p class="font-1-6 small_gap --text-light" style="font-size: 8.5vw">ABET accredited.<br>
+	      Low cost.<br>
+	      Full employment.</p>
+	  </div>
+	</div>
+    </section>
+
+
+    <section class="feature-box">
+      <div class="row" data-equalizer="kzcjtd-equalizer" data-mutate="kzcjtd-equalizer" data-resize="kzcjtd-equalizer">
+	<div class="large-6 columns">
+	  <p><span class="font-1-1"><span class="xlarge">Both the <strong>electrical engineering</strong> and <strong>computer engineering</strong> B.S. degrees are accredited by ABET-EAC.</p>
+	  <div class="online">
+	    <p><span class="font-1-2"><span class="large">Ensures that graduates have met the educational requirements necessary to enter the profession.</span></span></p>
+	  </div>
+	</div>
+	<div class="large-6 columns">
+	  <img src="https://apps.weber.edu/wsuimages/ece/site_photos/eac_logo.png"/>
+	</div>
+      </div>
+    </section>
+
+    <section class="section parallax --text-light" style="min-height:100px">
+      <img alt="" class="parallax__image" src="https://apps.weber.edu/wsuimages/msee/msee_thumbnail.png" style="top:-80%; height:60vh">
+      <div class="container">
+	<div class="hero">
+	  <div class="row --text-center">
+	    <p><span class="font-1-1"><span class="xlarge">Getting an electrical or computer engineering degree at <span class="font-1-1 xxlarge"><strong>Weber State University is affordable.</strong></span></p>
+	    <p><span class="font-1-1 xlarge">Tuition and fees at Weber State are considerably lower than the national average for private and public institutions as well as compared to other ABET-accredited programs in northern Utah.
+	    </p>
+
+	  </div>
+	</div>
+    </section>
+
+
+    <head>
+      <style>
+	table {
+	    border-collapse: collapse;
+	    border-radius: 10px;
+	    overflow: hidden;
+	}
+	span {
+	    font-size: 35px;
+	    font-weight: bold;
+	    word-break: normal;
+	}
+	td {
+	    border: 0px solid black;
+	    /* height: 50px; */
+	    /* width: 50px; */
+	    text-align: center;
+	    font-size: 40px;
+	    white-space: nowrap;
+	    font-family: 'tradegothiclt-light';
+	    /* padding: 40px 20px; */
+	}
+	caption {
+	    text-align: right;
+	}
+	th {
+	    color: white;
+	    padding: 20px 20px 20px 20px;
+	}
+	th:nth-child(1) {
+	    background-color: #7887ab;
+	    align-content: center;
+	}
+	th:nth-child(2) {
+	    background-color: #4f628e;
+	    align-content: center;
+	}
+	th:nth-child(3) {
+	    background-color: #2e4172;
+	    align-content: center;
+	}
+	th:nth-child(4) {
+	    background-color: #162955;
+	    align-content: center;
+	}
+	th:nth-child(5) {
+	    background-color: #061539;
+	    align-content: center;
+	}
+	tr:nth-child(2n) {
+	    background: #ececec;
+	}
+	tr:nth-child(2n-1) {
+	    background: #dbdbdb;
+	}
+	td:nth-child(2n) {
+	    background: lightgray;
+	}
+	tr:nth-child(odd) td:nth-child(even) {
+	    background: #e7e7e7;
+	}
+	tr:nth-child(even) td:nth-child(even) {
+	    background: #f3f3f3;
+	}
+	
+	
+      </style>
+    </head>
+    
+    
+    <section class="feature-box large">
+      <div class="row">
+	<p><span class="font-1-1"><span class="large">A comparison of tuition and fees for the 2022-2023 academic year per semester for each of the ABET-accredited EE/CE programs in the Utah System of Higher Education is given below (for Utah residents).  
+	</p>
+      </div>
+      <div class="row">
+
+	<table>  <!-- border="1" cellpadding="1" cellspacing="1" class="responsive" style="width:1000px;"> -->
+	  <thead>
+	    <tr>
+	      <td>Credit hours:</td>
+	      <td><a class="fancy-link" href="https://www.weber.edu/wsuimages/bursar/20-21%20UG.pdf" target="_blank">Weber State University (pdf)</a></td>
+	      <td><a class="fancy-link" href="https://www.usu.edu/budget/pdfs/tuition_and_fees/2020-21%20USU%20tuition-fee%20schedule.pdf" target="_blank">Utah State University (pdf)</a></td>
+	      <td><a class="fancy-link" href="https://fbs.admin.utah.edu/download/income/FreshSophRes/FreshSophTuitionRes.pdf" target="_blank">University of Utah (pdf)</a><sup>1</sup></td>
+	    </tr>
+	  </thead>
+	  <tr>
+	    <td>Part-time (6 hours)</td>
+	    <td>$1,823.23</td>
+	    <td>$2,316.92</td>
+	    <td>$2,913.67&nbsp;</td>
+	  </tr>
+	  <tr>
+	    <td>Full-time (15 hours)</td>
+	    <td>$3,052.98</td>
+	    <td>$3,929.72</td>
+	    <td>&nbsp;$5,624.47</td>
+	  </tr>
+	</table>
+
+
+
+	<p class="font-1-1"><sup>1</sup>University of Utah numbers are computed assuming differential tuition for upper-division engineering courses.</p>
+      </div>
+    </section>
+
+    
+    <section class="bg-color-2">
+      <div class="row">
+	<div class="large-6 columns">
+	  <!-- <div class="hero"> -->
+	    <!--   <div class="container"> -->
+	      <div class="parallax" style="min-height:55vh; height:63vh">
+		<img class="parallax__image" src="https://apps.weber.edu/wsuimages/ece/site_photos/maccarthy_lab.jpg"
+		     style="top:-130%;"/> <!--" object-fit:contain"/>-->
+		<!-- </div> -->
+	      <!--   </div> -->
+	  </div>
+	</div>
+	
+	<div class="large-6 columns">
+	  <!-- <div class="vertical-center"> -->
+	    <p><span class="font-1-1 --text-light"><span class="xlarge">ECE average class sizes range from <strong>18-24 students</strong> and will not exceed 24 students, even in introductory classes.</p>
+	    <div class="online">
+	      <p><span class="font-1-2 --text-light"><span class="large">The emphasis is applied engineering and not strictly theory.  Our goal is for every student to be prepared for the workforce in cutting edge electrical and computer engineering careers.
+	      </span></span></p>
+	    </div>
+	  </div>
+	</div>
+      </div>
+    </section>
+
+    <section class="feature-box">
+      <div class="row">
+	<div class="large-6 columns">
+	  <p><span class="font-1-1"><span class="xlarge">Weber State Engineering has been recognized by U.S. News & World Report as a <strong>top program</strong> among schools without Ph.D. programs.</p>
+	</div>
+	<div class="large-3 columns">
+	  <img src="https://apps.weber.edu/wsuimages/ece/graphics/badges__2021_EAST_bestengineeringdegree_inutah_purple__2021_EAST_bestengineeringdegree_inutah_purple.png"/>
+	</div>
+	<div class="large-3 columns">
+	  <img src="https://apps.weber.edu/wsuimages/ece/graphics/badges__2021_EAST_no75bestundergrad_engineeringdegreeinnation_purple__2021_EAST_no75bestundergrad_engineeringdegree_inthenation_purple.png"/>
+	</div>
+      </div>
+    </section>
+
+    
+    <section class="section parallax" style="min-height:100px">
+      <img alt="" class="parallax__image" src="https://apps.weber.edu/wsuimages/ece/site_photos/noorda_render.jpg"
+	   style="top:-170%;object-fit:contain"/>
+      <div class="container">
+	<div class="hero">
+	  <div class="row">
+	    <div class="hero-text-top-right color-1 text-color-1" style="max-width: 47%">
+	      <p class="font-1-6 small_gap --text-light" style="font-size: 45px">In Fall 2022, we will to move to our new <strong>state-of-the-art building</strong> on the Ogden campus.</p>
+	      <div class="large-text-left">
+		<a class="button large" style="background-color:#d25d12"
+		   href="https://www.weber.edu/east/noorda.html">Learn more.</a>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+      </div>
+    </section>
+
+    <section class="feature-box">
+      <div class="row">
+	<p class="font-1-1 xlarge"> A degree in electrical and computer engineering Electrical and computer engineering consistently rank near the top of the list of college degrees with the highest salary potential.  The tech and defense industries close to Weber State are rapidly expanding.   </p>
+
+	<div class="online">
+	  <p class="font-1-2 large">Given the exciting employment landscape along the Wasatch Front, <strong>ECE graduates are in high demand</strong> and have historically enjoyed nearly <strong>100% job placement upon graduation.</strong></p>
+	</div>
+      </div>
+      
+    </section>
+
+
+    <section class="feature-box">
+      <div class="row">
+	<p class="font-1-1 xlarge">Who hires ECE graduates?</p>
+	<div class="advertisement show" id="advertisement">
+	  <ul class="xlarge-block-grid-4 small-block-grid-2" data-equalizer="izu5ih-equalizer" data-mutate="izu5ih-equalizer" data-resize="izu5ih-equalizer">
+<li><div class="partners-line">
+<div class="partners fade-in-left fade-in lazyloaded">
+<p><br /><a href="https://www.hill.af.mil/" target="_blank"><img alt="hafb" src="https://apps.weber.edu/wsuimages/ece/logos/hafb.jpeg" /></a></p>
+</div></div></li>
+<li><div class="partners-line">
+<div class="partners fade-in-left fade-in lazyloaded">
+<p><br /><a href="https://www.northropgrumman.com/" target="_blank"><img alt="northrop" src="https://apps.weber.edu/wsuimages/ece/logos/northrop.png" /></a></p>
+</div></div></li>
+<li><div class="partners-line">
+<div class="partners fade-in-right fade-in lazyloaded">
+<p><br /><a href="https://www.l3harris.com/" target="_blank"><img alt="L3" src="https://apps.weber.edu/wsuimages/ece/logos/l3.png" /></a></p>
+</div></div></li>
+<li><div class="partners-line">
+<div class="partners fade-in-right fade-in lazyloaded">
+<p><br /><a href="https://www.lockheedmartin.com/" target="_blank"><img alt="lockheed" src="https://apps.weber.edu/wsuimages/ece/logos/lockheed.png" /></a></p>
+</div></div></li>
+<li><div class="partners-line">
+<div class="partners fade-in-right fade-in lazyloaded">
+<p><br /><a href="https://www.biofiredx.com/" target="_blank"><img alt="biomerieux" src="https://apps.weber.edu/wsuimages/ece/logos/biomerieux.png" /></a></p>
+</div></div></li>
+	  </ul>
+	</div>
+      </div>
+    </section>
+
+
+
+
+    <!--------------------------------------------------------------------------------------->
+    <!-------------------  CUSTOM STUFF ENDS HERE ----------------------------------------->
+    <!-- body_tag_end -->
+
+
+    <footer class="footer">
+      <div class="row">
+	<aside class="large-12 medium-12 xlarge-4 columns footer-left">
+	  <div class="text-center contact-info"><a href="https://www.weber.edu"><img alt="WSU Home Page" src="https://www.weber.edu/ui/images/footer-logo.svg" /> </a>
+	    <address>Ogden, Utah 84408</address>
+	    <a href="tel:18016266000">1-801-626-6000</a><br />
+	    <a class="button font-2-7 small contact-us" href="https://www.weber.edu/contactus/"><img alt="" src="https://www.weber.edu/ui/images/icons/footer/email.svg" />&nbsp;Contact Us</a> <!--<a class="button font-2-7 small contact-us" onclick="window.open('https://na.ntrsupport.com/inquiero/web/digisign/digisign.asp?login=I23EBF50AC6BF1A9C700243&amp;lang=us','chatwindow','width=10,height=10');">&nbsp;<img alt="" src="https://www.weber.edu/ui/images/icons/footer/chat.svg" />&nbsp;Live Chat&nbsp;</a>--></div>
+
+	  <div class="text-center footer-icons"><a href="https://www.facebook.com/WeberState" target="_blank" title="Like us on Facebook"><img alt="Like us on Facebook" src="https://www.weber.edu/ui/images/icons/footer/facebook-square.svg" /> </a> <a href="https://www.youtube.com/WeberStateU" target="_blank" title="Subscribe to our YouTube Channel"> <img alt="Subscribe to our YouTube Channel" src="https://www.weber.edu/ui/images/icons/footer/youtube.svg" /> </a> <a href="https://twitter.com/WeberStateU" target="_blank" title="Follow us on Twitter"> <img alt="Follow us on Twitter" src="https://www.weber.edu/ui/images/icons/footer/twitter.svg" /> </a> <a href="https://instagram.com/weberstate" target="_blank" title="Follow us on Instagram"> <img alt="Follow us on Instagram" src="https://www.weber.edu/ui/images/icons/footer/instagram.svg" /> </a><a href="https://www.tiktok.com/@weberstateu" target="_blank" title="Follow us on TikTok"> <img alt="Follow us on TikTok" src="https://www.weber.edu/ui/images/icons/footer/tiktok.svg" /> </a></div>
+	</aside>
+
+	<nav class="xlarge-8 columns footer-right">
+	  <div class="row">
+	    <div class="large-4 medium-12 columns center-for-mobile">
+	      <div class="nav-header">Popular</div>
+
+	      <ul>
+		<li><a href="https://portalapps.weber.edu/majors/">Majors, Minors &amp; Programs</a></li>
+		<li><a href="https://www.weber.edu/admissions">Admissions</a></li>
+		<li><a href="https://weber.edu/bookstore">Bookstore</a></li>
+		<li><a href="https://library.weber.edu/">Stewart Library</a></li>
+		<li><a href="https://jobs.weber.edu/">Jobs at Weber</a></li>
+		<li><a href="http://weberstatetickets.com">Weber State Tickets</a></li>
+		<li><a href="https://portalapps.weber.edu/eweber/">eWeber</a></li>
+	      </ul>
+	    </div>
+
+	    <div class="large-4 medium-12 columns center-for-mobile">
+	      <div class="nav-header">Directories</div>
+
+	      <ul>
+		<li><a href="https://bannerprod.weber.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search">Class Schedule</a></li>
+		<li><a href="https://apps.weber.edu/calendars/">Calendars</a></li>
+		<li><a href="http://catalog.weber.edu/">Catalog</a></li>
+		<li><a href="https://portalapps.weber.edu/directory/">Campus Directory</a></li>
+		<li><a href="https://www.weber.edu/weberstatemap/">Maps &amp; Locations</a></li>
+	      </ul>
+	    </div>
+
+	    <div class="large-4 medium-12 columns center-for-mobile">
+	      <div class="nav-header">Resources</div>
+
+	      <ul>
+		<li><a href="https://www.weber.edu/FinancialAid/cares-act-report.html">CARES Act - HEERF Report</a></li>
+		<li><a href="https://www.weber.edu/safeatweber">Safe@Weber</a></li>
+		<li><a href="https://www.weber.edu/nondiscriminationandaccessibility">Nondiscrimination &amp; Accessibility</a></li>
+		<li><a href="https://www.weber.edu/IR/Disclosures.html">Public Disclosures</a></li>
+		<li><a href="https://www.weber.edu/WSUHomePage/WSU-Terms-of-Use.html">WSU Terms of Use and Privacy</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+      </div>
+
+      <div class="row legal-footer"><small>&copy;&nbsp;Copyright&nbsp;<span id="year">2022</span>&nbsp;All&nbsp;Rights&nbsp;Reserved</small> <small> <span class="hide-for-medium-down">&nbsp;&nbsp;|&nbsp;&nbsp;</span><a onclick="translateURL()">&nbsp;Google&nbsp;Translate</a></small></div>
+    </footer>
+
+    <div class="overlay">&nbsp;</div>
+    <script>
+      function currentYear() {
+	  var d = new Date();
+	  var n = d.getFullYear();
+	  document.getElementById("year").innerHTML = n;
+      }
+      currentYear();
+    </script>
+
+
+
+
+
+
+
+    <script>
+
+      $("#navDesktop a").each(function () {
+
+	  $("#drilldown-menu").append("<li class='hide-for-xlarge-up'>" + this.outerHTML + "</li>");
+
+      });
+
+      </script>
+
+
+
+
+
+    <script src="https://www.weber.edu/framework/foundation/v6.5/node_modules/what-input/dist/what-input.js"></script>
+
+    <script src="https://www.weber.edu/framework/foundation/v6.5/node_modules/foundation-sites/dist/js/foundation.js"></script>
+
+    <script src="https://www.weber.edu/framework/foundation/v6.5/js/app.js"></script>
+
+
+
+    <script src="https://www.weber.edu/framework/scripts/wsu-public.js"></script>
+
+    <script src="https://www.weber.edu/framework/scripts/global.js"></script>
+
+    <script src="https://www.weber.edu/framework/scripts/mobile.js"></script>
+
+    <script src="https://www.weber.edu/framework/scripts/control-strip.js"></script>
+
+    <script src="https://www.weber.edu/framework/scripts/flying-focus.js"></script>
+
+
+
+
+
+    <script type="text/javascript" src="https://portalapps.weber.edu/SmartLogin/Scripts/2.0/TravelinLogin.js"></script>
+
+    <script type="text/javascript" src="https://portalapps.weber.edu/lazindex/Scripts/2.1/TravelinAZ.js"></script>
+
+    <script type="text/javascript" src="https://portalapps.weber.edu/lhomepagealerts/Scripts/2.0/travelinalerts.js"></script>
+
+    <script type="text/javascript" src="https://portalapps.weber.edu/ewebersystemmessages/Scripts/2.0/notifications.js"></script>
+
+
+
+    <!-- Tag Manager -->
+
+
+
+
+
+    <!-- Google Tag Manager (noscript) -->
+
+    <noscript>
+
+      <iframe src='https://www.googletagmanager.com/ns.html?id=GTM-MPNLQ3X'
+
+	      height="0" width="0" style="display:none;visibility:hidden"></iframe>
+
+    </noscript>
+
+    <!-- End Google Tag Manager (noscript) -->
+
+
+
+    <script src="https://www.weber.edu/ui/slick/slick.js"></script>
+
+  </body>
+
+</html>
+
+>>>>>>>>>>>>>>>>>>>>

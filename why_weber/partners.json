@@ -1,0 +1,82 @@
+{
+    "hafb": {
+	"img":  "hafb.jpeg",
+	"alt": "hafb",
+	"url": "https://www.hill.af.mil/"
+    },
+    "northrop": {
+	"img":  "northrop.png",
+	"alt": "northrop",
+	"url": "https://www.northropgrumman.com/"
+    },
+    "l3": {
+	"img":  "l3.png",
+	"alt": "L3",
+	"url": "https://www.l3harris.com/"
+    },
+    "biomerieux": {
+	"img":  "biomerieux.png",
+	"alt": "biomerieux",
+	"url": "https://www.biofiredx.com/"
+    },
+    "lockheed": {
+	"img":  "lockheed.png",
+	"alt": "lockheed",
+	"url": "https://www.lockheedmartin.com/"
+    },
+    "bae": {
+	"img":  "bae.png",
+	"alt": "bae",
+	"url": "https://www.baesystems.com/en/home/"
+    },
+    "williams": {
+	"img": "williams.jpeg",
+	"alt": "williams",
+	"url": "http://www.williams-int.com/"
+    },
+    "nasa": {
+	"img": "nasa.png",
+	"alt": "nasa",
+	"url": "http://www.nasa.gov/"
+    },
+    "micron": {
+	"img": "micron.png",
+	"alt": "micron",
+	"url": "https://www.micron.com/"
+    },
+    "rockymountain": {
+	"img": "rockymountain.png",
+	"alt": "rocky mountain",
+	"url": "https://www.rockymountainpower.net/"
+    },
+    "boeing": {
+	"img": "boeing.png",
+	"alt": "boeing",
+	"url": "https://www.boeing.com/"
+    },
+    "autoliv": {
+	"img": "autoliv.png",
+	"alt": "autoliv",
+	"url": "https://www.autoliv.com/"
+    },
+    "kihomac": {
+	"img": "kihomac.png",
+	"alt": "kihomac",
+	"url": "https://www.kihomac.com/"
+    },
+    "fresenius": {
+	"img": "fresenius.png",
+	"alt": "fresenius",
+	"url": "https://www.fmcna.com/"
+    },
+    "moog": {
+	"img": "moog.png",
+	"alt": "moog",
+	"url": "https://www.moog.com/"
+    },
+    "tdwilliamson": {
+	"img": "tdwilliamson.png",
+	"alt": "tdwilliamson",
+	"url": "https://www.tdwilliamson.com/"
+    }    
+ }
